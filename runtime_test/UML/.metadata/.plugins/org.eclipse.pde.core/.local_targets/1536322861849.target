@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?><target name="Running Platform">
+<locations>
+<location configuration="/C:/Users/Johncpe/.eclipse/ibm.software.delivery.platform_8.0.0_1655873425/configuration/" path="${eclipse_home}" type="Profile"/>
+</locations>
+<environment>
+<os>win32</os>
+<ws>win32</ws>
+<arch>x86_64</arch>
+<nl>en_US</nl>
+</environment>
+<launcherArgs>
+<vmArgs>-Xquickstart -Xms40m -Xmx1024m -Xmnx64m -Xgcpolicy:gencon -Xscmx48m -Xshareclasses:name=IBMSDP_%u -Xnolinenumbers -XX:MaxPermSize=128M -Xverify:none -Xcompressedrefs</vmArgs>
+</launcherArgs>
+</target>
