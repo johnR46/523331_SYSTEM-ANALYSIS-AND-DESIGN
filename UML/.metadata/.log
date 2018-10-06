@@ -4845,3 +4845,579 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational
 
 !ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-04 04:21:54.833
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+!SESSION 2018-10-06 12:20:14.034 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista amd64-64 jvmwa6460sr9-20110324_78506 (JIT enabled, AOT enabled)
+J9VM - 20110324_078506
+JIT  - r9_20101028_17488ifx3
+GC   - 20101027_AA_CMPRSS
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -data D:\523331_SYSTEM-ANALYSIS-AND-DESIGN\UML -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:31.514
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:31.577
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:31.838
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:31.854
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:31.870
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:31.917
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-06 12:20:31.917
+!MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:33.535
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:42.598
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+!SESSION 2018-10-06 12:21:34.003 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista amd64-64 jvmwa6460sr9-20110324_78506 (JIT enabled, AOT enabled)
+J9VM - 20110324_078506
+JIT  - r9_20101028_17488ifx3
+GC   - 20101027_AA_CMPRSS
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
+
+!ENTRY org.eclipse.ui 4 0 2018-10-06 12:21:45.110
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.xtools.rmp.ui.diagram.parts.DiagramEditorWithFeedback.dispose(Unknown Source)
+	at com.ibm.xtools.emf.query.ui.diagram.DiagramEditorWithExplorePalette.dispose(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelerDiagramEditor.dispose(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.createPart(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.getEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.AbstractEditorProvider.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.OpenEditorOperation.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.ExecutionStrategy$1.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.Service.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.openEditor(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand$2.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand.doExecuteWithResult(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$8.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.util.OperationUtil.runAsRead(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openMainDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$3.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 0 2018-10-06 12:21:45.125
+!MESSAGE Unable to create editor ID ModelerDiagramEditor: An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at java.util.HashMap$AbstractMapIterator.checkConcurrentMod(Unknown Source)
+	at java.util.HashMap$AbstractMapIterator.makeNext(Unknown Source)
+	at java.util.HashMap$KeyIterator.next(Unknown Source)
+	at org.eclipse.ui.internal.activities.MutableActivityManager.updateIdentifiers(Unknown Source)
+	at org.eclipse.ui.internal.activities.MutableActivityManager.updateListeners(Unknown Source)
+	at org.eclipse.ui.internal.activities.MutableActivityManager.setEnabledActivityIds(Unknown Source)
+	at org.eclipse.ui.internal.activities.ws.WorkbenchActivitySupport.setEnabledActivityIds(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.internal.EditingCapabilitiesHandler.setEnabledActivityIds(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.internal.EditingCapabilitiesHandler.enableActivities(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.internal.EditingCapabilitiesHandler.enableActivities(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.internal.EditingCapabilitiesHandler.enableActivities(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.util.EditingCapabilitiesUtil.enableActivities(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.parts.UMLDiagramEditor.createPaletteViewerProvider(Unknown Source)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditorWithFlyOutPalette.getPaletteViewerProvider(Unknown Source)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditorWithFlyOutPalette.createPartControl(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.createPart(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.getEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.AbstractEditorProvider.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.OpenEditorOperation.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.ExecutionStrategy$1.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.Service.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.openEditor(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand$2.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand.doExecuteWithResult(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$8.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.util.OperationUtil.runAsRead(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openMainDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$3.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:21:45.184
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY org.eclipse.ui 2 2 2018-10-06 12:21:45.184
+!MESSAGE Ignored attempt to add saveable that was already registered
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse.ui.internal.DefaultSaveable@4c4e4c4e from part: org.eclipse.ui.internal.ErrorEditorPart@4c4e4c4e
+	at org.eclipse.ui.internal.SaveablesList.logWarning(Unknown Source)
+	at org.eclipse.ui.internal.SaveablesList.addModel(Unknown Source)
+	at org.eclipse.ui.internal.SaveablesList.addModels(Unknown Source)
+	at org.eclipse.ui.internal.SaveablesList.postOpen(Unknown Source)
+	at org.eclipse.ui.internal.PartList.partOpened(Unknown Source)
+	at org.eclipse.ui.internal.PartList.access$0(Unknown Source)
+	at org.eclipse.ui.internal.PartList$1.propertyChanged(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.fireInternalPropertyChange(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.getEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.AbstractEditorProvider.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.OpenEditorOperation.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.ExecutionStrategy$1.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.Service.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.openEditor(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand$2.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand.doExecuteWithResult(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$8.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.util.OperationUtil.runAsRead(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openMainDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$3.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:21:45.436
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:21:45.467
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:21:45.498
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-06 12:21:45.592
+!MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:21:45.607
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+!SESSION 2018-10-06 12:23:04.493 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista amd64-64 jvmwa6460sr9-20110324_78506 (JIT enabled, AOT enabled)
+J9VM - 20110324_078506
+JIT  - r9_20101028_17488ifx3
+GC   - 20101027_AA_CMPRSS
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
+
+!ENTRY org.eclipse.ui 4 0 2018-10-06 12:23:13.640
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.xtools.rmp.ui.diagram.parts.DiagramEditorWithFeedback.dispose(Unknown Source)
+	at com.ibm.xtools.emf.query.ui.diagram.DiagramEditorWithExplorePalette.dispose(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelerDiagramEditor.dispose(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.createPart(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.getEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.AbstractEditorProvider.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.OpenEditorOperation.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.ExecutionStrategy$1.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.Service.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.openEditor(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand$2.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand.doExecuteWithResult(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$8.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.util.OperationUtil.runAsRead(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openMainDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$3.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 0 2018-10-06 12:23:13.655
+!MESSAGE Unable to create editor ID ModelerDiagramEditor: An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at java.util.HashMap$AbstractMapIterator.checkConcurrentMod(Unknown Source)
+	at java.util.HashMap$AbstractMapIterator.makeNext(Unknown Source)
+	at java.util.HashMap$KeyIterator.next(Unknown Source)
+	at org.eclipse.ui.internal.activities.MutableActivityManager.updateIdentifiers(Unknown Source)
+	at org.eclipse.ui.internal.activities.MutableActivityManager.updateListeners(Unknown Source)
+	at org.eclipse.ui.internal.activities.MutableActivityManager.setEnabledActivityIds(Unknown Source)
+	at org.eclipse.ui.internal.activities.ws.WorkbenchActivitySupport.setEnabledActivityIds(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.internal.EditingCapabilitiesHandler.setEnabledActivityIds(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.internal.EditingCapabilitiesHandler.enableActivities(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.internal.EditingCapabilitiesHandler.enableActivities(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.internal.EditingCapabilitiesHandler.enableActivities(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.util.EditingCapabilitiesUtil.enableActivities(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.parts.UMLDiagramEditor.createPaletteViewerProvider(Unknown Source)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditorWithFlyOutPalette.getPaletteViewerProvider(Unknown Source)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditorWithFlyOutPalette.createPartControl(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.createPart(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.getEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.AbstractEditorProvider.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.OpenEditorOperation.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.ExecutionStrategy$1.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.Service.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.openEditor(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand$2.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand.doExecuteWithResult(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$8.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.util.OperationUtil.runAsRead(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openMainDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$3.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+
+!ENTRY org.eclipse.ui 2 2 2018-10-06 12:23:13.687
+!MESSAGE Ignored attempt to add saveable that was already registered
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse.ui.internal.DefaultSaveable@3b493b49 from part: org.eclipse.ui.internal.ErrorEditorPart@3b493b49
+	at org.eclipse.ui.internal.SaveablesList.logWarning(Unknown Source)
+	at org.eclipse.ui.internal.SaveablesList.addModel(Unknown Source)
+	at org.eclipse.ui.internal.SaveablesList.addModels(Unknown Source)
+	at org.eclipse.ui.internal.SaveablesList.postOpen(Unknown Source)
+	at org.eclipse.ui.internal.PartList.partOpened(Unknown Source)
+	at org.eclipse.ui.internal.PartList.access$0(Unknown Source)
+	at org.eclipse.ui.internal.PartList$1.propertyChanged(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.fireInternalPropertyChange(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.getEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.AbstractEditorProvider.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.OpenEditorOperation.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.ExecutionStrategy$1.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.Service.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.openEditor(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand$2.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand.doExecuteWithResult(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$8.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.util.OperationUtil.runAsRead(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openMainDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$3.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:13.787
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:14.053
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:14.100
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:14.131
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:14.178
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-06 12:23:14.240
+!MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
+!SESSION 2018-10-06 12:23:49.682 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista amd64-64 jvmwa6460sr9-20110324_78506 (JIT enabled, AOT enabled)
+J9VM - 20110324_078506
+JIT  - r9_20101028_17488ifx3
+GC   - 20101027_AA_CMPRSS
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:57.280
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:57.668
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:57.708
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:57.752
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:57.808
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-06 12:23:57.925
+!MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
+!SESSION 2018-10-06 12:25:46.099 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista amd64-64 jvmwa6460sr9-20110324_78506 (JIT enabled, AOT enabled)
+J9VM - 20110324_078506
+JIT  - r9_20101028_17488ifx3
+GC   - 20101027_AA_CMPRSS
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -data D:\523331_SYSTEM-ANALYSIS-AND-DESIGN\UML -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:25:53.353
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:25:53.652
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:25:53.683
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:25:53.714
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:25:53.761
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-06 12:25:53.886
+!MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
