@@ -4845,7 +4845,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational
 
 !ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-04 04:21:54.833
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
-!SESSION 2018-10-06 12:20:14.034 -----------------------------------------------
+!SESSION 2018-10-04 16:50:04.549 -----------------------------------------------
 eclipse.buildId=unknown
 java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista amd64-64 jvmwa6460sr9-20110324_78506 (JIT enabled, AOT enabled)
 J9VM - 20110324_078506
@@ -4853,35 +4853,38 @@ JIT  - r9_20101028_17488ifx3
 GC   - 20101027_AA_CMPRSS
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
-Command-line arguments:  -data D:\523331_SYSTEM-ANALYSIS-AND-DESIGN\UML -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -data D:\523331_SYSTEM-ANALYSIS-AND-DESIGN\runtime_test\UML -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:31.514
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-04 16:50:25.847
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:31.577
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-04 16:50:26.072
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:31.838
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-04 16:50:26.757
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:31.854
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-04 16:50:26.784
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:31.870
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-04 16:50:26.817
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:31.917
-!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
-
-!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-06 12:20:31.917
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-04 16:50:26.873
 !MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:33.535
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-04 16:50:26.923
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:20:42.598
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-04 16:50:30.173
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
-!SESSION 2018-10-06 12:21:34.003 -----------------------------------------------
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-04 16:52:53.086
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-04 16:53:06.030
+!MESSAGE LUM license expired for productID 47: Past the expiration date on license.
+!SESSION 2018-10-06 09:09:32.381 -----------------------------------------------
 eclipse.buildId=unknown
 java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista amd64-64 jvmwa6460sr9-20110324_78506 (JIT enabled, AOT enabled)
 J9VM - 20110324_078506
@@ -4891,7 +4894,79 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
 
-!ENTRY org.eclipse.ui 4 0 2018-10-06 12:21:45.110
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 09:09:58.762
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 09:09:58.883
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 09:10:00.082
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 09:10:00.185
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 09:10:00.448
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 09:10:00.882
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-06 09:10:01.204
+!MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 09:10:13.154
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 09:17:13.751
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 11:07:01.851
+!MESSAGE LUM license expired for productID 47: Past the expiration date on license.
+!SESSION 2018-10-06 12:18:38.513 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista amd64-64 jvmwa6460sr9-20110324_78506 (JIT enabled, AOT enabled)
+J9VM - 20110324_078506
+JIT  - r9_20101028_17488ifx3
+GC   - 20101027_AA_CMPRSS
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:18:46.266
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:18:46.626
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:18:46.641
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:18:46.673
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:18:46.850
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-06 12:18:46.897
+!MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:18:47.178
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:18:49.054
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+!SESSION 2018-10-06 12:24:15.686 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista amd64-64 jvmwa6460sr9-20110324_78506 (JIT enabled, AOT enabled)
+J9VM - 20110324_078506
+JIT  - r9_20101028_17488ifx3
+GC   - 20101027_AA_CMPRSS
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -data D:\523331_SYSTEM-ANALYSIS-AND-DESIGN\runtime_test\UML -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
+
+!ENTRY org.eclipse.ui 4 0 2018-10-06 12:24:27.355
 !MESSAGE An unexpected exception was thrown.
 !STACK 0
 java.lang.NullPointerException
@@ -4958,7 +5033,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
 	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
 
-!ENTRY org.eclipse.ui 4 0 2018-10-06 12:21:45.125
+!ENTRY org.eclipse.ui 4 0 2018-10-06 12:24:27.382
 !MESSAGE Unable to create editor ID ModelerDiagramEditor: An unexpected exception was thrown.
 !STACK 0
 java.util.ConcurrentModificationException
@@ -5037,13 +5112,13 @@ java.util.ConcurrentModificationException
 	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
 	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:21:45.184
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:24:27.426
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY org.eclipse.ui 2 2 2018-10-06 12:21:45.184
+!ENTRY org.eclipse.ui 2 2 2018-10-06 12:24:27.476
 !MESSAGE Ignored attempt to add saveable that was already registered
 !STACK 0
-org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse.ui.internal.DefaultSaveable@4c4e4c4e from part: org.eclipse.ui.internal.ErrorEditorPart@4c4e4c4e
+org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse.ui.internal.DefaultSaveable@4160416 from part: org.eclipse.ui.internal.ErrorEditorPart@4160416
 	at org.eclipse.ui.internal.SaveablesList.logWarning(Unknown Source)
 	at org.eclipse.ui.internal.SaveablesList.addModel(Unknown Source)
 	at org.eclipse.ui.internal.SaveablesList.addModels(Unknown Source)
@@ -5110,31 +5185,31 @@ org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse
 	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
 	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:21:45.436
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:24:27.531
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:21:45.467
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:24:27.651
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:21:45.498
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:24:27.880
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-06 12:21:45.592
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:24:28.471
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-06 12:24:29.333
 !MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
-
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:21:45.607
-!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
-!SESSION 2018-10-06 12:23:04.493 -----------------------------------------------
+!SESSION 2018-10-07 21:23:34.916 -----------------------------------------------
 eclipse.buildId=unknown
-java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista amd64-64 jvmwa6460sr9-20110324_78506 (JIT enabled, AOT enabled)
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr9-20110324_78506 (JIT enabled, AOT enabled)
 J9VM - 20110324_078506
 JIT  - r9_20101028_17488ifx3
-GC   - 20101027_AA_CMPRSS
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+GC   - 20101027_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
 Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational.rsa.product.v80.ide
 
-!ENTRY org.eclipse.ui 4 0 2018-10-06 12:23:13.640
+!ENTRY org.eclipse.ui 4 0 2018-10-07 21:23:51.778
 !MESSAGE An unexpected exception was thrown.
 !STACK 0
 java.lang.NullPointerException
@@ -5199,9 +5274,8 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
 	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
 	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
 
-!ENTRY org.eclipse.ui 4 0 2018-10-06 12:23:13.655
+!ENTRY org.eclipse.ui 4 0 2018-10-07 21:23:51.803
 !MESSAGE Unable to create editor ID ModelerDiagramEditor: An unexpected exception was thrown.
 !STACK 0
 java.util.ConcurrentModificationException
@@ -5278,12 +5352,11 @@ java.util.ConcurrentModificationException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
 	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
 	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
 
-!ENTRY org.eclipse.ui 2 2 2018-10-06 12:23:13.687
+!ENTRY org.eclipse.ui 2 2 2018-10-07 21:23:51.818
 !MESSAGE Ignored attempt to add saveable that was already registered
 !STACK 0
-org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse.ui.internal.DefaultSaveable@3b493b49 from part: org.eclipse.ui.internal.ErrorEditorPart@3b493b49
+org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse.ui.internal.DefaultSaveable@36f336f3 from part: org.eclipse.ui.internal.ErrorEditorPart@36f336f3
 	at org.eclipse.ui.internal.SaveablesList.logWarning(Unknown Source)
 	at org.eclipse.ui.internal.SaveablesList.addModel(Unknown Source)
 	at org.eclipse.ui.internal.SaveablesList.addModels(Unknown Source)
@@ -5348,76 +5421,273 @@ org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
 	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
 	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:13.787
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:23:52.619
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:14.053
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:23:55.567
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:14.100
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:23:55.572
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:14.131
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:23:55.578
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:14.178
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:23:55.591
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-06 12:23:14.240
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:24:01.239
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:24:01.251
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:24:01.330
+!MESSAGE LUM license expired for productID 44: Past the expiration date on license.
+
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-07 21:24:01.498
 !MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
-!SESSION 2018-10-06 12:23:49.682 -----------------------------------------------
+!SESSION 2018-10-07 21:24:58.906 -----------------------------------------------
 eclipse.buildId=unknown
-java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista amd64-64 jvmwa6460sr9-20110324_78506 (JIT enabled, AOT enabled)
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr9-20110324_78506 (JIT enabled, AOT enabled)
 J9VM - 20110324_078506
 JIT  - r9_20101028_17488ifx3
-GC   - 20101027_AA_CMPRSS
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+GC   - 20101027_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
 Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational.rsa.product.v80.ide
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:57.280
+!ENTRY org.eclipse.ui 4 0 2018-10-07 21:25:12.753
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.xtools.rmp.ui.diagram.parts.DiagramEditorWithFeedback.dispose(Unknown Source)
+	at com.ibm.xtools.emf.query.ui.diagram.DiagramEditorWithExplorePalette.dispose(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelerDiagramEditor.dispose(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.createPart(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.getEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.AbstractEditorProvider.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.OpenEditorOperation.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.ExecutionStrategy$1.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.Service.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.openEditor(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand$2.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand.doExecuteWithResult(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$8.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.util.OperationUtil.runAsRead(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openMainDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$3.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 0 2018-10-07 21:25:12.770
+!MESSAGE Unable to create editor ID ModelerDiagramEditor: An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at java.util.HashMap$AbstractMapIterator.checkConcurrentMod(Unknown Source)
+	at java.util.HashMap$AbstractMapIterator.makeNext(Unknown Source)
+	at java.util.HashMap$KeyIterator.next(Unknown Source)
+	at org.eclipse.ui.internal.activities.MutableActivityManager.updateIdentifiers(Unknown Source)
+	at org.eclipse.ui.internal.activities.MutableActivityManager.updateListeners(Unknown Source)
+	at org.eclipse.ui.internal.activities.MutableActivityManager.setEnabledActivityIds(Unknown Source)
+	at org.eclipse.ui.internal.activities.ws.WorkbenchActivitySupport.setEnabledActivityIds(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.internal.EditingCapabilitiesHandler.setEnabledActivityIds(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.internal.EditingCapabilitiesHandler.enableActivities(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.internal.EditingCapabilitiesHandler.enableActivities(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.internal.EditingCapabilitiesHandler.enableActivities(Unknown Source)
+	at com.ibm.xtools.common.ui.reduction.util.EditingCapabilitiesUtil.enableActivities(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.parts.UMLDiagramEditor.createPaletteViewerProvider(Unknown Source)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditorWithFlyOutPalette.getPaletteViewerProvider(Unknown Source)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditorWithFlyOutPalette.createPartControl(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.createPart(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.getEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.AbstractEditorProvider.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.OpenEditorOperation.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.ExecutionStrategy$1.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.Service.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.openEditor(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand$2.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand.doExecuteWithResult(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$8.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.util.OperationUtil.runAsRead(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openMainDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$3.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 2 2 2018-10-07 21:25:12.779
+!MESSAGE Ignored attempt to add saveable that was already registered
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse.ui.internal.DefaultSaveable@3f003f from part: org.eclipse.ui.internal.ErrorEditorPart@3f003f
+	at org.eclipse.ui.internal.SaveablesList.logWarning(Unknown Source)
+	at org.eclipse.ui.internal.SaveablesList.addModel(Unknown Source)
+	at org.eclipse.ui.internal.SaveablesList.addModels(Unknown Source)
+	at org.eclipse.ui.internal.SaveablesList.postOpen(Unknown Source)
+	at org.eclipse.ui.internal.PartList.partOpened(Unknown Source)
+	at org.eclipse.ui.internal.PartList.access$0(Unknown Source)
+	at org.eclipse.ui.internal.PartList$1.propertyChanged(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.fireInternalPropertyChange(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(Unknown Source)
+	at org.eclipse.ui.internal.EditorReference.getEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.AbstractEditorProvider.openEditor(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.OpenEditorOperation.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.ExecutionStrategy$1.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.service.Service.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.execute(Unknown Source)
+	at org.eclipse.gmf.runtime.common.ui.services.editor.EditorService.openEditor(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand$2.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at com.ibm.xtools.uml.ui.diagram.internal.commands.OpenDiagramCommand.doExecuteWithResult(Unknown Source)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$8.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain$3.run(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLTransactionalEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runExclusive(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.internal.domain.MSLEditingDomain.runAsRead(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.core.util.OperationUtil.runAsRead(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor.openMainDiagram(Unknown Source)
+	at com.ibm.xtools.modeler.ui.editors.internal.ModelEditor$3.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:25:16.585
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:57.668
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:25:16.601
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:57.708
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:25:16.601
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:57.752
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:25:16.621
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:23:57.808
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:25:21.911
 !MESSAGE LUM license expired for productID 45: Past the expiration date on license.
 
-!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-06 12:23:57.925
-!MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
-!SESSION 2018-10-06 12:25:46.099 -----------------------------------------------
-eclipse.buildId=unknown
-java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista amd64-64 jvmwa6460sr9-20110324_78506 (JIT enabled, AOT enabled)
-J9VM - 20110324_078506
-JIT  - r9_20101028_17488ifx3
-GC   - 20101027_AA_CMPRSS
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
-Command-line arguments:  -data D:\523331_SYSTEM-ANALYSIS-AND-DESIGN\UML -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-07 21:25:21.992
+!MESSAGE LUM license expired for productID 44: Past the expiration date on license.
 
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:25:53.353
-!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
-
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:25:53.652
-!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
-
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:25:53.683
-!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
-
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:25:53.714
-!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
-
-!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-06 12:25:53.761
-!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
-
-!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-06 12:25:53.886
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-07 21:25:22.149
 !MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
