@@ -10,11 +10,22 @@ import {BehaviorSubject} from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
+
 export class AppComponent {
   title = 'a,b,c,d,e';
-  
+
+  public AAA() {
+    alert('OK');
+  }
+
+  public ff(){
+    alert('no');
+  }
+
+ 
 
 }
+
 export class SelectValueBindingExample {
   selected = '';
 }
@@ -23,3 +34,6 @@ export class ButtonOverviewExample {}
 export class CheckboxOverviewExample {
  
 }
+
+export class CardOverviewExample {}
+
