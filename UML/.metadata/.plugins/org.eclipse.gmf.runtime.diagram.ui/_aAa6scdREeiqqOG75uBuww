@@ -1,5 +1,5 @@
-#Thu Oct 04 17:09:27 ICT 2018
-viewport.x=101
+#Thu Oct 11 00:06:08 ICT 2018
+viewport.x=96
 zoom=1.0
 print.margin.right=0.5
 rulergrid.rulerunit=0
@@ -16,4 +16,4 @@ rulergrid.gridlinestyle=6
 rulergrid.gridlevel=true
 print.margin.top=0.5
 print.usePortrait=true
-viewport.y=52
+viewport.y=0

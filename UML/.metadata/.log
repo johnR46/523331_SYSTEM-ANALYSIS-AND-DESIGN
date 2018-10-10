@@ -5691,3 +5691,221 @@ org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse
 
 !ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-07 21:25:22.149
 !MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
+!SESSION 2018-10-10 10:31:29.785 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr9-20110324_78506 (JIT enabled, AOT enabled)
+J9VM - 20110324_078506
+JIT  - r9_20101028_17488ifx3
+GC   - 20101027_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational.rsa.product.v80.ide
+
+!ENTRY org.eclipse.ui 4 4 2018-10-10 10:34:45.910
+!MESSAGE Could not create view: 'com.ibm.ccl.erf.ui.views.reportexplorer'.
+
+!ENTRY org.eclipse.ui 4 4 2018-10-10 10:34:45.952
+!MESSAGE Could not create view: 'com.ibm.xtools.mde.guidance'.
+
+!ENTRY org.eclipse.ui 4 0 2018-10-10 10:35:07.330
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 unknown 0 0 2018-10-10 10:35:07.330
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2018-10-10 10:35:07.330
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2018-10-10 10:35:07.330
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2018-10-10 10:35:07.330
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2018-10-10 10:35:07.330
+!MESSAGE Unable to restore perspective: Workspace - Modeling.
+!SUBENTRY 2 org.eclipse.ui 0 0 2018-10-10 10:35:07.330
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2018-10-10 10:35:07.330
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2018-10-10 10:35:07.330
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2018-10-10 10:35:07.330
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2018-10-10 10:35:07.330
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 4 2018-10-10 10:35:07.330
+!MESSAGE Could not create view: org.eclipse.pde.runtime.LogView
+!STACK 1
+org.eclipse.ui.PartInitException: Could not create view: org.eclipse.pde.runtime.LogView
+	at org.eclipse.ui.internal.ViewFactory.createView(Unknown Source)
+	at org.eclipse.ui.internal.Perspective.createReferences(Unknown Source)
+	at org.eclipse.ui.internal.Perspective.restoreState(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage$17.runWithException(Unknown Source)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$31.runWithException(Unknown Source)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+!SUBENTRY 3 org.eclipse.ui 4 0 2018-10-10 10:35:07.354
+!MESSAGE Could not create view: org.eclipse.pde.runtime.LogView
+!SUBENTRY 2 org.eclipse.ui 4 4 2018-10-10 10:35:07.354
+!MESSAGE Could not create view: com.ibm.ccl.erf.ui.views.reportexplorer
+!STACK 1
+org.eclipse.ui.PartInitException: Could not create view: com.ibm.ccl.erf.ui.views.reportexplorer
+	at org.eclipse.ui.internal.ViewFactory.createView(Unknown Source)
+	at org.eclipse.ui.internal.Perspective.createReferences(Unknown Source)
+	at org.eclipse.ui.internal.Perspective.restoreState(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage$17.runWithException(Unknown Source)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$31.runWithException(Unknown Source)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+!SUBENTRY 3 org.eclipse.ui 4 0 2018-10-10 10:35:07.355
+!MESSAGE Could not create view: com.ibm.ccl.erf.ui.views.reportexplorer
+!SUBENTRY 2 org.eclipse.ui 4 4 2018-10-10 10:35:07.355
+!MESSAGE Could not create view: com.ibm.xtools.mde.guidance
+!STACK 1
+org.eclipse.ui.PartInitException: Could not create view: com.ibm.xtools.mde.guidance
+	at org.eclipse.ui.internal.ViewFactory.createView(Unknown Source)
+	at org.eclipse.ui.internal.Perspective.createReferences(Unknown Source)
+	at org.eclipse.ui.internal.Perspective.restoreState(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage$17.runWithException(Unknown Source)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$31.runWithException(Unknown Source)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+!SUBENTRY 3 org.eclipse.ui 4 0 2018-10-10 10:35:07.355
+!MESSAGE Could not create view: com.ibm.xtools.mde.guidance
+!SUBENTRY 2 unknown 0 0 2018-10-10 10:35:07.355
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2018-10-10 10:35:07.355
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2018-10-10 10:35:07.355
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2018-10-10 10:35:07.355
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2018-10-10 10:35:07.355
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 0 2018-10-10 10:35:07.355
+!MESSAGE Could not find view: org.eclipse.pde.runtime.LogView
+!SUBENTRY 2 org.eclipse.ui 4 0 2018-10-10 10:35:07.355
+!MESSAGE Could not find view: com.ibm.ccl.erf.ui.views.reportexplorer
+!SUBENTRY 2 org.eclipse.ui 4 0 2018-10-10 10:35:07.355
+!MESSAGE Could not find view: com.ibm.xtools.mde.guidance
+!SUBENTRY 1 unknown 0 0 2018-10-10 10:35:07.355
+!MESSAGE OK
+!SESSION 2018-10-11 00:03:34.481 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr9-20110324_78506 (JIT enabled, AOT enabled)
+J9VM - 20110324_078506
+JIT  - r9_20101028_17488ifx3
+GC   - 20101027_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational.rsa.product.v80.ide
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-11 00:04:20.102
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-11 00:04:20.182
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-11 00:04:20.768
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-11 00:04:20.813
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-11 00:04:20.847
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-11 00:04:21.164
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-11 00:04:22.454
+!MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-11 00:04:25.586
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-11 00:04:34.673
+!MESSAGE LUM license expired for productID 44: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-11 00:05:58.342
+!MESSAGE LUM license expired for productID 47: Past the expiration date on license.
