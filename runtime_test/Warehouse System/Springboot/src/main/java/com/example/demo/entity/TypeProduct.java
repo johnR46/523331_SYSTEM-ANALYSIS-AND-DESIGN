@@ -28,8 +28,8 @@ public class TypeProduct {
 
    
 	
-	@OneToMany(cascade = CascadeType.ALL)
-	private Set<Bill_of_lading> bill_of_lading = new HashSet<>();
+//	@OneToMany(cascade = CascadeType.ALL)
+//	private Set<Bill_of_lading> bill_of_lading = new HashSet<>();
 	
      
       
