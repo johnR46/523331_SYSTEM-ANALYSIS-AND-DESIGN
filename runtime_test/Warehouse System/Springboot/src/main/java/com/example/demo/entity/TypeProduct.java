@@ -15,16 +15,13 @@ public class TypeProduct {
 	@NotNull
 	@SequenceGenerator(name="typeID_seq",sequenceName="typeID_seq")               
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="typeID_seq")  
-    private @NonNull Long typeID;
+    private @NonNull Long typeId;
     
     
     
     private @NonNull  String nametype;   
     public TypeProduct(String nametype )  {
-        this.typeID = typeID;
         this.nametype = nametype;
-      
-  
         
 	}
 

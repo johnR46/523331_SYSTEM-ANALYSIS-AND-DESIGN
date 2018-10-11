@@ -34,18 +34,25 @@ public class DataLoader implements ApplicationRunner {
  //  this.bill_of_ladingRepository.save(new Bill_of_lading(product, typeproduct, user))
 
        // product data
-        this.productRepository.save(new Product("coke", 20.2, 1));
-         
-    
+      this.productRepository.save(new Product("coke", 20.2, 1));
+
 
     // typeproduct
         this.typeProductRepository.save(new TypeProduct("export"));
        
     // User
          this.userRepository.save(new User("B5814824","John"));
+
+
        
-    
-        
+       // test load data in billOfLa
+        Product p  = this.productRepository.findByProductId(1L);  //find id =  1   
+        TypeProduct t =  this.typeProductRepository.findByTypeId(1L);  //find id =  1 
+        User u = this.userRepository.findByUserId(1L);  //find id =  1 
+     
+
+        //save billOfLa 
+        this.bill_of_ladingRepository.save(new Bill_of_lading(p,t,u));
 
     }
     
