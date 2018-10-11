@@ -20,7 +20,7 @@ public class Bill_of_lading{
 	@NotNull
 	@SequenceGenerator(name="bill_of_lading_seq",sequenceName="bill_of_lading_seq")               
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="bill_of_lading_seq")  
-	private @NonNull Long Bill_ID;
+	private @NonNull Long billId;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_ID", nullable = true)

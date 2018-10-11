@@ -17,7 +17,7 @@ public class Product{
         @NotNull
         @SequenceGenerator(name="product_ID_seq",sequenceName="product_ID_seq")               
         @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="product_ID_seq")     
-        private @NonNull Long product_ID;
+        private @NonNull Long productId;
 
  
     private @NonNull String name;
@@ -32,12 +32,9 @@ public class Product{
 
 
 public Product(String name , Double price , int Qty){
-
-        this.product_ID = product_ID;
         this.name = name;
         this.price = price;
         this.Qty = Qty;
-        
 	}
 
 

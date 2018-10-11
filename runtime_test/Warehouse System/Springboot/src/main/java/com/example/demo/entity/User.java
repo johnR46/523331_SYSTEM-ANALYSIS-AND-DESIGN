@@ -21,7 +21,7 @@ public class User {
 	@NotNull
 	@SequenceGenerator(name="userID_seq",sequenceName="userID_seq")               
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="userID_seq")  
-    private @NonNull Long userID;
+    private @NonNull Long userId;
     
     
     private @NonNull String  username;
@@ -29,7 +29,6 @@ public class User {
     
     
     public User(String username,String password)  {
-        this.userID = userID;
         this.username = username;
         this.password = password;
   
