@@ -24,9 +24,9 @@ public class Product{
     private @NonNull int  Qty;
   
       
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "bill_of_lading", nullable = true)
-    private Product product;
+  //  @ManyToOne(fetch = FetchType.LAZY)
+  //  @JoinColumn(name = "bill_of_lading", nullable = true)
+ //   private Product product;
 
 
 

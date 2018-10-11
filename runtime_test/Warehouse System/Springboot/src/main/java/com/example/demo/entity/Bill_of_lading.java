@@ -25,8 +25,13 @@ public class Bill_of_lading{
 	private @NonNull int qty;
 
 	
-	@OneToMany(cascade = CascadeType.ALL)
-	private Set<Product> product = new HashSet<>();
+	//@OneToMany(cascade = CascadeType.ALL)
+	//private Set<Product> product = new HashSet<>();
+	
+	  
+   // @ManyToOne(fetch = FetchType.LAZY)
+   // @JoinColumn(name = "product", nullable = true)
+//	private Bill_of_lading product;
 	
 	  
     @ManyToOne(fetch = FetchType.LAZY)

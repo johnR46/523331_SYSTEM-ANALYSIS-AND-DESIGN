@@ -14,6 +14,7 @@ import java.util.*;
 @Entity
 @Data 
 @Table(name = "User")
+
 public class User {
     @Id
     @GeneratedValue
@@ -32,8 +33,8 @@ public class User {
     
 
     
-	@OneToMany(cascade = CascadeType.ALL)
-	private Set<Bill_of_lading> bill_of_lading = new HashSet<>();
+//	@OneToMany(cascade = CascadeType.ALL)
+//	private Set<Bill_of_lading> bill_of_lading = new HashSet<>();
     
     
     public User(String username,String password)  {
