@@ -10,17 +10,17 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @RestController
 class TypeProductController{
     private TypeProductRepository typeProductRepository;
-
+    
     public TypeProductController(TypeProductRepository typeProductRepository){
             this.typeProductRepository = typeProductRepository;
     }
 
-    @GetMapping("/TypeProduct-list")
+ /*   @GetMapping("/TypeProduct-list")
     @CrossOrigin(origins = "http://localhost:4200")
     public Collection<TypeProduct> typeProductList() {
         return typeProductRepository.findAll().stream()
         .collect(Collectors.toList());
     }
-
+*/
 
 }

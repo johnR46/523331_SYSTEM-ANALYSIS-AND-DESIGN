@@ -7,51 +7,45 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.persistence.OneToMany;
+
+import java.time.LocalDate;
 import java.util.*;
 
 @Entity
 @Data  // lombox จะสร้าง method getter setter ให้เอง
-@Table(name="bill_of_lading") //ชื่อตาราง
+
+@Table(name="Bill_of_lading") //ชื่อตาราง
 public class Bill_of_lading{
-	@Id
-    @GeneratedValue
-	private @NonNull Long id;
-
-
-    @NotNull
-    @Size(max = 65)
-    @Column(name = "price")
-	private @NonNull String price;
-	private @NonNull int qty;
-
+	@Id  
+	@NotNull
+	@SequenceGenerator(name="bill_of_lading_seq",sequenceName="bill_of_lading_seq")               
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="bill_of_lading_seq")  
+	private @NonNull Long Bill_ID;
 	
-	//@OneToMany(cascade = CascadeType.ALL)
-	//private Set<Product> product = new HashSet<>();
+	@ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "product_ID", nullable = true)
+	private Product product;
 	
-	  
-   // @ManyToOne(fetch = FetchType.LAZY)
-   // @JoinColumn(name = "product", nullable = true)
-//	private Bill_of_lading product;
-	
-	  
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "typeproduct", nullable = true)
-	private Bill_of_lading Typeproduct;
-	
+    @JoinColumn(name = "typeID", nullable = true)
+	private TypeProduct typeproduct;
 		  
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "User", nullable = true)
-	private Bill_of_lading  user;
-	
-	private Date date;
-	public Bill_of_lading(String price,int  qty){
-		this.price = price;
-		this.qty = qty;
-		this.date =  new Date();
+    @JoinColumn(name = "userID", nullable = true)
+	private User  user;
+
+	@NotNull
+	private LocalDate  date;
+	private Bill_of_lading(){}
+
+	public Bill_of_lading(Product product,TypeProduct typeproduct,User user ){
+		this.product = product;
+		this.typeproduct = typeproduct;
+		this.user = user;
+		this.date = LocalDate.now();
 	
 	}
 
-	
 }
 
 

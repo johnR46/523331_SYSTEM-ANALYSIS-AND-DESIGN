@@ -16,28 +16,20 @@ import java.util.*;
 @Table(name = "User")
 
 public class User {
-    @Id
-    @GeneratedValue
-    private @NonNull Long id;
-    
-    
-    @NotNull
-    @Size(max = 65)
-    @Column(name = "username")
-    private @NonNull String  username;
-    
-    @NotNull
-    @Size(max = 65)
-    @Column(name = "password")
-    private @NonNull String  password;
-    
 
+    @Id  
+	@NotNull
+	@SequenceGenerator(name="userID_seq",sequenceName="userID_seq")               
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="userID_seq")  
+    private @NonNull Long userID;
     
-//	@OneToMany(cascade = CascadeType.ALL)
-//	private Set<Bill_of_lading> bill_of_lading = new HashSet<>();
+    
+    private @NonNull String  username;
+    private @NonNull String  password;
     
     
     public User(String username,String password)  {
+        this.userID = userID;
         this.username = username;
         this.password = password;
   
