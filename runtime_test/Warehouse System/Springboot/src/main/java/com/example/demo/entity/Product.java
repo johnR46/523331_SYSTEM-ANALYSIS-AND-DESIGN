@@ -10,17 +10,18 @@ import javax.persistence.ManyToOne;
 
 @Entity
 @Data  // lombox จะสร้าง method getter setter ให้เอง
-@Table(name="product") //ชื่อตาราง
-public class Product{
-    @Id
-    @GeneratedValue
-    private @NonNull Long id;
+@Table(name="Product") //ชื่อตาราง
 
-    @NotNull
-    @Size(max = 65)
-    @Column(name = "name")
+public class Product{
+        @Id  
+        @NotNull
+        @SequenceGenerator(name="product_ID_seq",sequenceName="product_ID_seq")               
+        @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="product_ID_seq")     
+        private @NonNull Long product_ID;
+
+ 
     private @NonNull String name;
-    private @NonNull int  price;
+    private @NonNull Double  price;
     private @NonNull int  Qty;
   
       
@@ -30,7 +31,9 @@ public class Product{
 
 
 
-public Product(String name , int price , int Qty){
+public Product(String name , Double price , int Qty){
+
+        this.product_ID = product_ID;
         this.name = name;
         this.price = price;
         this.Qty = Qty;

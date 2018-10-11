@@ -31,27 +31,21 @@ public class DataLoader implements ApplicationRunner {
 
 
         //Bill_of_lading
-        this.bill_of_ladingRepository.save(new Bill_of_lading("20",1));
+ //  this.bill_of_ladingRepository.save(new Bill_of_lading(product, typeproduct, user))
 
        // product data
-        this.productRepository.save(new Product("Coke", 20, 1));
-        this.productRepository.save(new Product("Acer", 10, 2));
-        this.productRepository.save(new Product("Asus", 1, 2));
-        this.productRepository.save(new Product("Dell", 5, 3));
+        this.productRepository.save(new Product("coke", 20.2, 1));
+         
     
-    
+
     // typeproduct
         this.typeProductRepository.save(new TypeProduct("export"));
-        this.typeProductRepository.save(new TypeProduct("import"));
-         this.typeProductRepository.save(new TypeProduct("import"));
-         this.typeProductRepository.save(new TypeProduct("export"));
+       
     // User
          this.userRepository.save(new User("B5814824","John"));
-         this.userRepository.save(new User("ss","dd"));
-         this.userRepository.save(new User("xx","gg"));
-         this.userRepository.save(new User("hjh","sss"));
+       
     
-         
+        
 
     }
     

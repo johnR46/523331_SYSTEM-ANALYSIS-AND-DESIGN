@@ -4,37 +4,24 @@ import javax.persistence.Entity;
 import javax.persistence.*;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-
-import java.util.*;
 
 
 @Entity
 @Data 
-@Table(name = "typeproduct")
+@Table(name = "TypeProduct")
 public class TypeProduct {
-    @Id
-    @GeneratedValue
-    private @NonNull Long id;
+    @Id  
+	@NotNull
+	@SequenceGenerator(name="typeID_seq",sequenceName="typeID_seq")               
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="typeID_seq")  
+    private @NonNull Long typeID;
     
     
     
-    @NotNull
-    @Size(max = 65)
-    @Column(name = "nametype")
-    private @NonNull  String nametype;
-
-   
-	
-//	@OneToMany(cascade = CascadeType.ALL)
-//	private Set<Bill_of_lading> bill_of_lading = new HashSet<>();
-	
-     
-      
-
+    private @NonNull  String nametype;   
     public TypeProduct(String nametype )  {
+        this.typeID = typeID;
         this.nametype = nametype;
       
   

@@ -17,7 +17,7 @@ class  ProductController{
 
     }
 
-    @GetMapping("/Product-list")
+    /*@GetMapping("/Product-list")
     @CrossOrigin(origins = "http://localhost:4200")
     public Collection<Product>  productList() {
         return productRepository.findAll().stream()
@@ -29,6 +29,6 @@ class  ProductController{
 
 
     }
-
+*/
 
 }
