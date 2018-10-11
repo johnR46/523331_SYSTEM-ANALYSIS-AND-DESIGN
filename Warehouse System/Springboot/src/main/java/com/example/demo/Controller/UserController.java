@@ -26,20 +26,20 @@ class UserController{
     }
 */
 
- /*   @GetMapping("/User-list")
+    @GetMapping("/User-list")
     @CrossOrigin(origins = "http://localhost:4200")
     public Collection<User> userList() {
         return userRepository.findAll().stream()
         .collect(Collectors.toList());
     }
-*/
 
-  /* @GetMapping("/User-list/{id}")
+
+   @GetMapping("/User-list/{id}")
     @CrossOrigin(origins = "http://localhost:4200")
     public User userFind(@PathVariable("id") Long id) {
 
         return userRepository.findByUserId(id);
     }
-*/
+
 
 }

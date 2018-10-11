@@ -18,12 +18,13 @@ class  ProductController{
 
     }
 
-    /*@GetMapping("/Product-list")
+    @GetMapping("/Product-list")
     @CrossOrigin(origins = "http://localhost:4200")
     public Collection<Product>  productList() {
         return productRepository.findAll().stream()
         .collect(Collectors.toList());
-    }*/
+    }
+    
     @GetMapping("/Product-list/{id}")
     @CrossOrigin(origins = "http://localhost:4200")
     public Product  productList(@PathVariable("id") Long id) {

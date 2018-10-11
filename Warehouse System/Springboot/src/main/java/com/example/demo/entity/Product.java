@@ -15,8 +15,8 @@ import javax.persistence.ManyToOne;
 public class Product{
         @Id  
         @NotNull
-        @SequenceGenerator(name="product_ID_seq",sequenceName="product_ID_seq")               
-        @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="product_ID_seq")     
+        @SequenceGenerator(name="productId_seq",sequenceName="productId_seq")               
+        @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="productId_seq")     
         private @NonNull Long productId;
 
  
@@ -25,10 +25,6 @@ public class Product{
     private @NonNull int  Qty;
   
       
-  //  @ManyToOne(fetch = FetchType.LAZY)
-  //  @JoinColumn(name = "bill_of_lading", nullable = true)
- //   private Product product;
-
 
 
 public Product(String name , Double price , int Qty){

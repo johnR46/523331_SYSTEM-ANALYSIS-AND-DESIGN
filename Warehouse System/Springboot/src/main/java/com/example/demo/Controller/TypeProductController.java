@@ -2,6 +2,7 @@ package com.example.demo.Controller;
 import  com.example.demo.entity.TypeProduct;
 import com.example.demo.repository.TypeProductRepository;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.Collection;
 import java.util.stream.Collectors;
@@ -15,12 +16,18 @@ class TypeProductController{
             this.typeProductRepository = typeProductRepository;
     }
 
- /*   @GetMapping("/TypeProduct-list")
+    @GetMapping("/TypeProduct-list")
     @CrossOrigin(origins = "http://localhost:4200")
     public Collection<TypeProduct> typeProductList() {
         return typeProductRepository.findAll().stream()
         .collect(Collectors.toList());
     }
-*/
+
+    @GetMapping("/TypeProduct-list/{id}")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public TypeProduct  typeProductList(@PathVariable("id") Long id) {
+        return typeProductRepository.findByTypeId(id);
+    }
+
 
 }

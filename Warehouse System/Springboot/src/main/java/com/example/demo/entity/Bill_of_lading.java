@@ -23,15 +23,15 @@ public class Bill_of_lading{
 	private @NonNull Long billId;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "product_ID", nullable = true)
+    @JoinColumn(name = "productId", nullable = true)
 	private Product product;
 	
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "typeID", nullable = true)
+    @JoinColumn(name = "typeId", nullable = true)
 	private TypeProduct typeproduct;
 		  
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "userID", nullable = true)
+    @JoinColumn(name = "userId", nullable = true)
 	private User  user;
 
 	@NotNull
@@ -47,6 +47,5 @@ public class Bill_of_lading{
 	}
 
 }
-
 
 
