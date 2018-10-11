@@ -4,9 +4,9 @@
 		<item value="true" key="useLimit"/>
 		<item value="true" key="error"/>
 		<item value="50" key="limit"/>
-		<item value="true" key="ok"/>
 		<item value="true" key="warning"/>
-		<item value="true" key="info"/>
+		<item value="true" key="ok"/>
 		<item value="true" key="allSessions"/>
+		<item value="true" key="info"/>
 	</section>
 </section>
