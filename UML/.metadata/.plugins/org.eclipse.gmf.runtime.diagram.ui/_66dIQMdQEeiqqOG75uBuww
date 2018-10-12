@@ -1,18 +1,18 @@
-#Wed Oct 10 11:21:10 ICT 2018
+#Fri Oct 12 15:18:31 ICT 2018
 rulergrid.gridlinestyle=6
 print.margin.bottom=0.5
 print.margin.top=0.5
 print.page.height=11.0
 print.usePortrait=true
-viewport.x=150
 print.margin.left=0.5
 rulergrid.gridlinecolor=12632256
+viewport.x=0
 rulergrid.gridspacing=0.125
-print.margin.right=0.5
 rulergrid.rulerunit=0
+print.margin.right=0.5
 rulergrid.snaptogrid=true
-print.page.size=Letter
 rulergrid.gridlevel=true
+print.page.size=Letter
 print.useInches=true
-zoom=1.0
 print.page.width=8.5
+zoom=1.0
