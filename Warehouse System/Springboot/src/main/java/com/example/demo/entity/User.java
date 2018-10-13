@@ -4,9 +4,11 @@ import javax.persistence.Entity;
 import javax.persistence.*;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
-
+import java.util.*;
 
 
 @Entity
@@ -17,8 +19,8 @@ public class User {
 
     @Id  
 	@NotNull
-	@SequenceGenerator(name="userId_seq",sequenceName="userId_seq")               
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="userId_seq")  
+	@SequenceGenerator(name="userID_seq",sequenceName="userID_seq")               
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="userID_seq")  
     private @NonNull Long userId;
     
     

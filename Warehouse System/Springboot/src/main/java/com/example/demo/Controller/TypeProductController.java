@@ -25,7 +25,7 @@ class TypeProductController{
 
     @GetMapping("/TypeProduct-list/{id}")
     @CrossOrigin(origins = "http://localhost:4200")
-    public TypeProduct  typeProductList(@PathVariable("id") Long id) {
+    public TypeProduct  productList(@PathVariable("id") Long id) {
         return typeProductRepository.findByTypeId(id);
     }
 

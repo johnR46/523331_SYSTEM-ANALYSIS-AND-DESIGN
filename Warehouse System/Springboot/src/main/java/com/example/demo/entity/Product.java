@@ -5,7 +5,8 @@ import javax.persistence.*;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
-
+import javax.validation.constraints.Size;
+import javax.persistence.ManyToOne;
 
 @Entity
 @Data  // lombox จะสร้าง method getter setter ให้เอง
@@ -14,24 +15,26 @@ import javax.validation.constraints.NotNull;
 public class Product{
         @Id  
         @NotNull
-        @SequenceGenerator(name="productId_seq",sequenceName="productId_seq")               
-        @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="productId_seq")     
+        @SequenceGenerator(name="product_ID_seq",sequenceName="product_ID_seq")               
+        @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="product_ID_seq")     
         private @NonNull Long productId;
 
  
     private @NonNull String name;
     private @NonNull Double  price;
-    private @NonNull int  qty;
-    
-    
+    private @NonNull int  Qty;
   
       
+  //  @ManyToOne(fetch = FetchType.LAZY)
+  //  @JoinColumn(name = "bill_of_lading", nullable = true)
+ //   private Product product;
 
 
-public Product(String name , Double price , int qty){
+
+public Product(String name , Double price , int Qty){
         this.name = name;
         this.price = price;
-        this.qty = qty;
+        this.Qty = Qty;
 	}
 
 

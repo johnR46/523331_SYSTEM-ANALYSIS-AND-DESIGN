@@ -5,10 +5,11 @@ import javax.persistence.*;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
-
+import javax.validation.constraints.Size;
+import javax.persistence.OneToMany;
 
 import java.time.LocalDate;
-
+import java.util.*;
 
 @Entity
 @Data  // lombox จะสร้าง method getter setter ให้เอง
@@ -21,16 +22,16 @@ public class Bill_of_lading{
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="bill_of_lading_seq")  
 	private @NonNull Long billId;
 	
-	@ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "productId", nullable = true)
+	@ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "product_ID", nullable = true)
 	private Product product;
 	
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "typeId", nullable = true)
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "typeID", nullable = true)
 	private TypeProduct typeproduct;
 		  
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "userId", nullable = true)
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "userID", nullable = true)
 	private User  user;
 
 	@NotNull
@@ -46,5 +47,6 @@ public class Bill_of_lading{
 	}
 
 }
+
 
 

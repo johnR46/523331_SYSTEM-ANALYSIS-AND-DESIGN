@@ -1,11 +1,12 @@
 package com.example.demo.Controller;
-import  com.example.demo.entity.Product;
+import java.util.Collection;
+import java.util.stream.Collectors;
+
+import com.example.demo.entity.Product;
 import  com.example.demo.repository.ProductRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PathVariable;
-import java.util.Collection;
-import java.util.stream.Collectors;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController

@@ -26,7 +26,7 @@ class UserController{
     }
 */
 
-    @GetMapping("/User-list")
+   @GetMapping("/User-list")
     @CrossOrigin(origins = "http://localhost:4200")
     public Collection<User> userList() {
         return userRepository.findAll().stream()

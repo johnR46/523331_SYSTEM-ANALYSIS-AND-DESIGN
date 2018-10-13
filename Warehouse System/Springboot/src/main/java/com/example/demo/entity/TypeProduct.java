@@ -13,8 +13,8 @@ import javax.validation.constraints.NotNull;
 public class TypeProduct {
     @Id  
 	@NotNull
-	@SequenceGenerator(name="typeId_seq",sequenceName="typeId_seq")               
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="typeId_seq")  
+	@SequenceGenerator(name="typeID_seq",sequenceName="typeID_seq")               
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="typeID_seq")  
     private @NonNull Long typeId;
     
     
