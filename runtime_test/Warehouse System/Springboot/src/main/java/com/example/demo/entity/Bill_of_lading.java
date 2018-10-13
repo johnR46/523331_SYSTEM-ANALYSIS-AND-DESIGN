@@ -22,15 +22,15 @@ public class Bill_of_lading{
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="bill_of_lading_seq")  
 	private @NonNull Long billId;
 	
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "product_ID", nullable = true)
 	private Product product;
 	
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "typeID", nullable = true)
 	private TypeProduct typeproduct;
 		  
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "userID", nullable = true)
 	private User  user;
 

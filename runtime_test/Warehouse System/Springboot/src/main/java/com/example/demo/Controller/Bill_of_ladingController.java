@@ -34,19 +34,13 @@ class Bill_of_ladingController {
     }
 
 */
-   /* @GetMapping("/Bill_of_lading-list")
+   @GetMapping("/Bill_of_lading-list")
     @CrossOrigin(origins = "http://localhost:4200")
     public Collection<Bill_of_lading> bill_of_lading() {
         return bill_of_ladingRepository.findAll().stream()
         .collect(Collectors.toList());
-
- 
-
-
-
-
     }
-    */
+    
 
   
 
