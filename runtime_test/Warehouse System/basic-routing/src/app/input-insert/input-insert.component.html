@@ -1,0 +1,14 @@
+<mat-card class="example-form">
+  input-insert works!
+  <form >
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Fist input"  [(ngModel)]="data.frist"
+      required name="frist" #frist >
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Last input" [(ngModel)]="data.last"
+      required name="last" #last>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button color="primary"  (click)="SubmitdData()">Submit</button>
+</mat-card>
