@@ -5,11 +5,10 @@ import javax.persistence.*;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-import javax.persistence.OneToMany;
+
 
 import java.time.LocalDate;
-import java.util.*;
+
 
 @Entity
 @Data  // lombox จะสร้าง method getter setter ให้เอง

@@ -5,8 +5,7 @@ import javax.persistence.*;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-import javax.persistence.ManyToOne;
+
 
 @Entity
 @Data  // lombox จะสร้าง method getter setter ให้เอง
@@ -22,15 +21,17 @@ public class Product{
  
     private @NonNull String name;
     private @NonNull Double  price;
-    private @NonNull int  Qty;
+    private @NonNull int  qty;
+    
+    
   
       
 
 
-public Product(String name , Double price , int Qty){
+public Product(String name , Double price , int qty){
         this.name = name;
         this.price = price;
-        this.Qty = Qty;
+        this.qty = qty;
 	}
 
 
