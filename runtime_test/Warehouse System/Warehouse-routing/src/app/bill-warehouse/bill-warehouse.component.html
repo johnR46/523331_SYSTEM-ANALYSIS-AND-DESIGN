@@ -1,3 +1,20 @@
-<p>
-  bill-warehouse works!
-</p>
+
+<mat-card id = "center">
+        <h1 id="center"> Save product detail  </h1>
+    </mat-card>
+
+    
+<mat-card class="example-form">
+        <div>
+            <h3>bill of lading </h3>
+            <p>  nameproduct :&nbsp;&nbsp;&nbsp;{{data.name}} </p>
+            <p> priceproduct:&nbsp;&nbsp;{{data.price}}</p>
+            <p>  typeProduct:&nbsp;&nbsp;{{data.typeProduct}}</p>
+            
+            <p> qty :&nbsp;&nbsp;{{data.Qty}}</p>
+             
+            <p> date :&nbsp;&nbsp;{{data.date}}</p>
+            
+            <button mat-raised-button color="warn"  routerLink="">Submit</button>
+        </div>
+        </mat-card>

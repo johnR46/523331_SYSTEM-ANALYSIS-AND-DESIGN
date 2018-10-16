@@ -1,3 +1,23 @@
-<p>
-  login-warehouse works!
-</p>
+
+
+<head>
+<title>Page Title</title>
+</head>
+<body>
+  <h1 id="myHeader">Warehouse Manage System</h1>
+</body>
+<mat-card>
+    <form >
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Username"  [(ngModel)]="data.frist"
+          required name="frist" #frist >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input type ="password" matInput placeholder="password"   [(ngModel)]="data.last" 
+          required name="last" #last>
+        </mat-form-field>
+      </form>
+      <button mat-raised-button color="primary"  (click)="SubmitdData()">Submit</button>
+</mat-card>
+
+
