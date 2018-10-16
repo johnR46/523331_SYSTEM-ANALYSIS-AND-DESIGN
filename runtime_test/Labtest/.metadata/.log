@@ -1,0 +1,105 @@
+!SESSION 2018-10-17 01:38:44.856 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr9-20110324_78506 (JIT enabled, AOT enabled)
+J9VM - 20110324_078506
+JIT  - r9_20101028_17488ifx3
+GC   - 20101027_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational.rsa.product.v80.ide
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:04:53.083
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:04:53.730
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:04:53.761
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:04:53.794
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:04:53.938
+!MESSAGE LUM license expired for productID 44: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:04:54.034
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.xtools.emf.ram.ui 4 0 2018-10-17 02:04:54.781
+!MESSAGE RAM Client is not installed. Please install the RAM Client to enable the RAM integration functionality.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:05:41.823
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:05:46.806
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:06.475
+!MESSAGE LUM license expired for productID 47: Past the expiration date on license.
+
+!ENTRY org.eclipse.osgi 2 1 2018-10-17 02:07:16.563
+!MESSAGE NLS unused message: MenuManager_CreateAction__MessageDriven__Activity_name in: com.ibm.xtools.transform.uml2.ejb3.ui.internal.l10n.EJB_3_0_TransformationMessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-10-17 02:07:16.579
+!MESSAGE NLS missing message: MenuManager_CreateAction__ServiceProvider__Stereotype_name in: com.ibm.xtools.modeling.enterprise.services.internal.l10n.Messages
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:21.656
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:21.656
+!MESSAGE LicenseCheck returned FALSE!
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:21.672
+!MESSAGE LUM license expired for productID 44: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:21.672
+!MESSAGE LicenseCheck returned FALSE!
+
+!ENTRY com.ibm.xtools.emf.core 4 0 2018-10-17 02:07:21.688
+!MESSAGE Feature com.ibm.xtools.transform.uml2.soa.feature, version 1.0.0, failed license check
+
+!ENTRY com.ibm.xtools.emf.core 4 0 2018-10-17 02:07:21.689
+!MESSAGE Feature com.ibm.xtools.updm, version 7.3.0, failed license check
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:21.704
+!MESSAGE LUM license expired for productID 49: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:21.704
+!MESSAGE LicenseCheck returned FALSE!
+
+!ENTRY com.ibm.xtools.emf.core 4 0 2018-10-17 02:07:21.704
+!MESSAGE Feature com.ibm.rsa.sipmtk.feature, version 7.5.4.qualifier, failed license check
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:21.704
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:21.704
+!MESSAGE LicenseCheck returned FALSE!
+
+!ENTRY com.ibm.xtools.emf.core 4 0 2018-10-17 02:07:21.704
+!MESSAGE Feature com.ibm.xtools.transform.uml2.soa.feature, version 1.0.0, failed license check
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:22.177
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:22.177
+!MESSAGE LicenseCheck returned FALSE!
+
+!ENTRY com.ibm.xtools.emf.core 4 0 2018-10-17 02:07:22.177
+!MESSAGE Feature com.ibm.xtools.transform.uml2.soa.feature, version 1.0.0, failed license check
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:22.225
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:22.225
+!MESSAGE LicenseCheck returned FALSE!
+
+!ENTRY com.ibm.xtools.emf.core 4 0 2018-10-17 02:07:22.225
+!MESSAGE Feature com.ibm.xtools.transform.struts.profile.feature, version 1.0.0.qualifier, failed license check
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:07:32.535
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
+
+!ENTRY com.ibm.cic.licensing.common.util 4 0 2018-10-17 02:18:11.606
+!MESSAGE LUM license expired for productID 45: Past the expiration date on license.
