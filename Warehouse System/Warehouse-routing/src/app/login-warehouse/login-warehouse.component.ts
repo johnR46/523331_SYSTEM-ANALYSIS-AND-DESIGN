@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginWarhouseService } from '../service-warehouse/login-warhouse.service';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-warehouse',
@@ -8,15 +11,26 @@ import { Component, OnInit } from '@angular/core';
 
 })
 export class LoginWarehouseComponent implements OnInit {
-  data:any={}
- 
-  constructor() { }
+  credentials = {username: '', password: ''};
+  constructor(private app: LoginWarhouseService, private http: HttpClient, private router: Router,public data) {
+  }
 
   ngOnInit() {
   }
-   SubmitdData(){
-    console.log(this.data)
-  }
+
+  LoginSubmit(){
+    this.app.authenticate(this.credentials,()=>{
+      if(this.app.authenticated){
+       this.router.navigate(['select']);
+      }else{
+        console.log(this.data);
+       //  
+      }
+     //  console.log(this.app.authenticated)
+     // this.router.navigate(['home']);
+    })
+   
+}
 
 }
 

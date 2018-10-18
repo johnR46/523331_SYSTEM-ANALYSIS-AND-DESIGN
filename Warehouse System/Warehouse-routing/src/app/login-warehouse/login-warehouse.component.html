@@ -9,15 +9,15 @@
 <mat-card>
     <form >
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Username"  [(ngModel)]="data.frist"
-          required name="frist" #frist >
+          <input matInput placeholder="Username"  [(ngModel)]="data.Username"
+          required name="Username" #Username >
         </mat-form-field>
         <mat-form-field class="example-full-width">
-          <input type ="password" matInput placeholder="password"   [(ngModel)]="data.last" 
-          required name="last" #last>
+          <input type ="password" matInput placeholder="password"   [(ngModel)]="data.password" 
+          required name="password" #password>
         </mat-form-field>
       </form>
-      <button mat-raised-button color="primary"  (click)="SubmitdData()">Submit</button>
+      <button mat-raised-button color="primary"  (click)="SubmitdData()">login</button>
 </mat-card>
 
 

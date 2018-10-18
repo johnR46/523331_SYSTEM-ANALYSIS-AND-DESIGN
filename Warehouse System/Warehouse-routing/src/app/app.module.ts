@@ -5,7 +5,6 @@ import { LoginWarehouseComponent } from './login-warehouse/login-warehouse.compo
 import { SelectWarehouseComponent } from './select-warehouse/select-warehouse.component';
 import { ProductWarehouseComponent } from './product-warehouse/product-warehouse.component';
 import { BillWarehouseComponent } from './bill-warehouse/bill-warehouse.component';
-
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCheckboxModule, MatNativeDateModule} from '@angular/material';
 import {MatButtonModule} from '@angular/material';
@@ -39,6 +38,20 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { FormsModule } from '@angular/forms';
 import { RoutingMainModule } from "./routing-main/routing-main.module";
+import { LoginWarhouseService } from './service-warehouse/login-warhouse.service';
+import { Injectable } from '@angular/core';
+import { HttpInterceptor, HttpRequest, HttpHandler } from '@angular/common/http';
+@Injectable()
+export class XhrInterceptor implements HttpInterceptor {
+
+  intercept(req: HttpRequest<any>, next: HttpHandler) {
+    const xhr = req.clone({
+      headers: req.headers.set('X-Requested-With', 'XMLHttpRequest')
+    });
+    return next.handle(xhr);
+  }
+}
+
 
 @NgModule({
   declarations: [
@@ -46,7 +59,13 @@ import { RoutingMainModule } from "./routing-main/routing-main.module";
     LoginWarehouseComponent,
     SelectWarehouseComponent,
     ProductWarehouseComponent,
-    BillWarehouseComponent
+    BillWarehouseComponent,
+    LoginWarhouseService,
+
+   
+
+ 
+  
   ],
   imports: [
     BrowserModule,
@@ -84,10 +103,11 @@ import { RoutingMainModule } from "./routing-main/routing-main.module";
     MatPaginatorModule,
     MatNativeDateModule,
     FormsModule,
-    RoutingMainModule
+    RoutingMainModule,
+    
    
   ],
-  providers: [],
+  providers: [LoginWarhouseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

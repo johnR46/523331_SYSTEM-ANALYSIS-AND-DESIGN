@@ -18,18 +18,10 @@ public class Product{
         @SequenceGenerator(name="product_ID_seq",sequenceName="product_ID_seq")               
         @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="product_ID_seq")     
         private @NonNull Long productId;
-
  
     private @NonNull String name;
     private @NonNull Double  price;
     private @NonNull int  Qty;
-  
-      
-  //  @ManyToOne(fetch = FetchType.LAZY)
-  //  @JoinColumn(name = "bill_of_lading", nullable = true)
- //   private Product product;
-
-
 
 public Product(String name , Double price , int Qty){
         this.name = name;
