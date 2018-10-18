@@ -1,0 +1,39 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+        #myHeader {
+            background-color: indianred;
+            color: bisque;
+            padding: 40px;
+            text-align: center;
+        }
+        #my {
+          background-color: lightblue;
+          color: black;
+          padding: 20px;
+          text-align: center;
+  }
+
+  #card {
+    background-color: rgb(73, 59, 59);
+    color: rgba(27, 13, 13, 0.349);
+    padding: 20px;
+    text-align: center;
+}
+  
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
