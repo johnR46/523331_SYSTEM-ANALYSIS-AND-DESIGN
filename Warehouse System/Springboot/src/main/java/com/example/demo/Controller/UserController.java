@@ -46,9 +46,18 @@ class UserController{
 
         return userRepository.findByUserId(id);
     }
+    @GetMapping("/User-list/0/{name}")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public User userfindname(@PathVariable("name") String name) {
 
+        return userRepository.findByUsername(name);
+    }
+  
 
-    @PostMapping("/User-list/{username}/pass/{pass}")
+    
+  
+
+    @PostMapping("/User-list/{0}/{username}/pass/{pass}")
     @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<Map<String,Object>> userCheck(@PathVariable("username") String username,@PathVariable("pass") String pass){
     User user = this.userRepository.findByUsernameAndPassword(username,pass);

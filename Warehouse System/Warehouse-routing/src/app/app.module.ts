@@ -39,9 +39,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { FormsModule } from '@angular/forms';
 import { RoutingMainModule } from "./routing-main/routing-main.module";
 import { HttpClientModule } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
-import { map, catchError, tap } from 'rxjs/operators';
+import { TypeProductWarehouseComponent } from './type-product-warehouse/type-product-warehouse.component';
+import { AppserviceService } from './service/appservice.service';
 
 @NgModule({
   declarations: [
@@ -50,12 +49,7 @@ import { map, catchError, tap } from 'rxjs/operators';
     SelectWarehouseComponent,
     ProductWarehouseComponent,
     BillWarehouseComponent,
-    
-
-   
-
- 
-  
+    TypeProductWarehouseComponent,
   ],
   imports: [
     HttpClientModule,
@@ -96,9 +90,10 @@ import { map, catchError, tap } from 'rxjs/operators';
     FormsModule,
     RoutingMainModule,
     
+    
    
   ],
-  providers: [],
+  providers: [AppserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

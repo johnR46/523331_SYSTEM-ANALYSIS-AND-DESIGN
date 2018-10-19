@@ -6,18 +6,20 @@
 <body>
   <h1 id="myHeader">Warehouse Manage System</h1>
 </body>
-<mat-card>
-    <form >
-        <mat-form-field class="example-full-width">
-          <input matInput placeholder="Username"  [(ngModel)]="data.Username"
-          required name="Username" #Username >
-        </mat-form-field>
-        <mat-form-field class="example-full-width">
-          <input type ="password" matInput placeholder="password"   [(ngModel)]="data.password" 
-          required name="password" #password>
-        </mat-form-field>
-      </form>
-      <button mat-raised-button color="primary"  (click)="LoginSubmit()">login</button>
+
+
+<mat-card class="layout-login">
+  <h1>Log in</h1>
+  <form role="form" (submit)="LoginSubmit()">
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="username" [(ngModel)]="credentials.username" required name="username" #username>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="password" type="password" [(ngModel)]="credentials.password" required name="password" #password>
+  </mat-form-field>
+</div>
+<button  type="submit" mat-button class="login-btn" >Log in</button>
+</form>
 </mat-card>
-
-
