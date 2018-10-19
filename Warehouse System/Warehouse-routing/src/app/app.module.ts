@@ -38,20 +38,10 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { FormsModule } from '@angular/forms';
 import { RoutingMainModule } from "./routing-main/routing-main.module";
-import { LoginWarhouseService } from './service-warehouse/login-warhouse.service';
+import { HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { HttpInterceptor, HttpRequest, HttpHandler } from '@angular/common/http';
-@Injectable()
-export class XhrInterceptor implements HttpInterceptor {
-
-  intercept(req: HttpRequest<any>, next: HttpHandler) {
-    const xhr = req.clone({
-      headers: req.headers.set('X-Requested-With', 'XMLHttpRequest')
-    });
-    return next.handle(xhr);
-  }
-}
-
+import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+import { map, catchError, tap } from 'rxjs/operators';
 
 @NgModule({
   declarations: [
@@ -60,7 +50,7 @@ export class XhrInterceptor implements HttpInterceptor {
     SelectWarehouseComponent,
     ProductWarehouseComponent,
     BillWarehouseComponent,
-    LoginWarhouseService,
+    
 
    
 
@@ -68,6 +58,7 @@ export class XhrInterceptor implements HttpInterceptor {
   
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule, 
     MatCheckboxModule,
@@ -107,7 +98,7 @@ export class XhrInterceptor implements HttpInterceptor {
     
    
   ],
-  providers: [LoginWarhouseService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
