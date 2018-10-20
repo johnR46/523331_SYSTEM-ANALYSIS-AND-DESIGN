@@ -18,6 +18,8 @@ export class LoginWarehouseComponent implements OnInit {
 
   
   ngOnInit() {
+    
+    
 }
   
 

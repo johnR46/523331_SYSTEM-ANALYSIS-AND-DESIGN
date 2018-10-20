@@ -41,6 +41,7 @@ import { RoutingMainModule } from "./routing-main/routing-main.module";
 import { HttpClientModule } from '@angular/common/http';
 import { TypeProductWarehouseComponent } from './type-product-warehouse/type-product-warehouse.component';
 import { AppserviceService } from './service/appservice.service';
+import { BillOfladingService } from './Service/bill-oflading.service';
 
 @NgModule({
   declarations: [
@@ -93,7 +94,7 @@ import { AppserviceService } from './service/appservice.service';
     
    
   ],
-  providers: [AppserviceService],
+  providers: [AppserviceService,BillOfladingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

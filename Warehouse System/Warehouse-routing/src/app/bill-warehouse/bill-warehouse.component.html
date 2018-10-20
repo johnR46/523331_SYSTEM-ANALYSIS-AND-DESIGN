@@ -1,21 +1,32 @@
+<mat-card id="center">
+    <h1 id="center"> Bill - of -lading </h1>
+</mat-card>
 
-<mat-card id = "center">
-        <h1 id="center"> Save product detail  </h1>
-    </mat-card>
+<mat-card id="showDB">
 
-    
-<mat-card class="example-form">
-        <div>
-            <h3>bill of lading </h3>
-            <p>  nameproduct :&nbsp;&nbsp;&nbsp;{{data.name}} </p>
-            <p> priceproduct:&nbsp;&nbsp;{{data.price}}</p>
-            <p>  typeProduct:&nbsp;&nbsp;{{data.typeProduct}}</p>
-            
-            <p> qty :&nbsp;&nbsp;{{data.Qty}}</p>
-             
-            <p> date :&nbsp;&nbsp;{{data.date}}</p>
-           
-            <button mat-raised-button color="primary"  (click)="selectLink()">back to save product</button>
-           
-        </div>
-        </mat-card>
+    <div>
+        <h3>bill of lading </h3>
+        <mat-form-field>
+          <input matInput placeholder="Select Bill ID : "  [(ngModel)]="data.id"
+         required name="id" #id >
+         </mat-form-field>
+         
+
+
+        <button mat-raised-button color="primary" (click)="pushBillId()">Send </button>
+
+
+        <p>bill id:&nbsp;&nbsp;&nbsp; {{this.bill_of_lading.billId}}</p>
+        <p>Username :&nbsp;&nbsp;&nbsp; {{this.bill_of_lading.user.username}}</p>
+        <p> nameproduct :&nbsp;&nbsp;&nbsp;{{this.bill_of_lading.product.name}} </p>
+        <p> priceproduct:&nbsp;&nbsp;{{this.bill_of_lading.product.price}}</p>
+        <p> typeProduct:&nbsp;&nbsp;{{this.bill_of_lading.typeproduct.nametype}}</p>
+        <p> qty :&nbsp;&nbsp;{{this.bill_of_lading.product.qty}}</p>
+        <p> date :&nbsp;&nbsp;{{this.bill_of_lading.date}}</p>
+
+
+
+        <button mat-raised-button color="primary" (click)="selectLink()">back to save product</button>
+
+    </div>
+</mat-card>
