@@ -20,27 +20,22 @@ data:any={}
 }
   ngOnInit() {
     
-    /* 
-     this.route.params.subscribe(prams=>{
-        this.data = prams
-        console.log(prams)
-      
-      })
-      */
-      
+  
     }
     pushBillId(){
+      if(this.data.id == undefined || this.data.id == null){
+        alert('Out of range')
+      }else if(this.data.id != undefined &&this.data.id != null ){
+        this.app.getdata(this.bill_of_lading,this.data.id,()=>{
+          this.bill_of_lading = this.app.bill_of_lading
+          console.log(this.bill_of_lading);
+          if(this.bill_of_lading == null){
+            alert('Out of range')
+          }
+        })
+      }
       //console.log(this.data)
-      this.app.getdata(this.bill_of_lading,this.data.id,()=>{
-        this.bill_of_lading = this.app.bill_of_lading
-        console.log(this.bill_of_lading);
-
-       //console.log( this.bill_of_lading.billId)
-
-        
-        
-
-      })
+     
     }
   
     selectLink(){
