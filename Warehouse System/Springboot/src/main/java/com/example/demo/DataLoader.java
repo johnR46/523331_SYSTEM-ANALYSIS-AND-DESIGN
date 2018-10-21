@@ -34,7 +34,7 @@ public class DataLoader implements ApplicationRunner {
  //  this.bill_of_ladingRepository.save(new Bill_of_lading(product, typeproduct, user))
 
        // product data
-      this.productRepository.save(new Product("coke", 20.2, 1));
+    Product x2 =  this.productRepository.save(new Product("coke", 20.2, 1));
       this.productRepository.save(new Product("่joke", 20.2, 1));
       this.productRepository.save(new Product("oke", 20.2, 1));
 
