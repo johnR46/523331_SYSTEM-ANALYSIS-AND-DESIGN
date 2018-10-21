@@ -12,6 +12,7 @@ import { AppserviceService } from '../service/appservice.service';
 
 export class LoginWarehouseComponent implements OnInit {
   credentials = {username: '', password: ''};
+
   
    constructor(private app:AppserviceService ,private router: Router, private http: HttpClient) {}
   
@@ -29,7 +30,8 @@ alert('please Enter usernaem or pass')
   }else{
     this.app.authenticate(this.credentials,()=>{
       if(this.app.authenticated){
-       this.router.navigate(['select']);
+        
+       this.router.navigate(['select',{name:this.credentials.username,pass:this.credentials.password}]);
       }else{
        //  alert('not user')
       alert('No User ')

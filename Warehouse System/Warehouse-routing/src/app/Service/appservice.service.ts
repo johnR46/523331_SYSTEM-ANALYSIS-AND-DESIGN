@@ -14,7 +14,7 @@ export class AppserviceService {
   }
   authenticate(credentials, callback){
     this.http.post(this.API+'/User-list/0/'+credentials.username+'/pass/'+credentials.password,{}).subscribe(data=>{
-      console.log(credentials)
+     // console.log(credentials)
         if(data['success']){
             this.authenticated = true
             this.user = data['user']
