@@ -21,7 +21,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
-class Bill_of_ladingController {
+class Bill_of_ladingController { //pornhub ช่วยได้
     private Bill_of_ladingRepository bill_of_ladingRepository;
     private ProductRepository productRepository;
     private TypeProductRepository typeProductRepository;
@@ -49,80 +49,40 @@ class Bill_of_ladingController {
         return bill_of_ladingRepository.findAll().stream().collect(Collectors.toList());
     }
 
-    @PostMapping("/Bill_of_lading-insert/{id}/product/{product}/typeproduct/{typeproduct}/user/{user}")
+    @PostMapping("/Bill_of_lading-insert/{id}")
     @CrossOrigin(origins = "http://localhost:4200")
-    public ResponseEntity<Map<String, Object>> BillLadingSubmit(@PathVariable("id") Long id,
-            @PathVariable("product") Product product, @PathVariable("typeproduct") TypeProduct typeProduct,
-            @PathVariable("user") User user) {
+    public ResponseEntity<Map<String, Object>> BillLadingSubmit(@PathVariable("id") Long id) {
         try {
-            Product p =this.productRepository.findByProductId(id);
+            Product p = this.productRepository.findByProductId(id);
             TypeProduct t = this.typeProductRepository.findByTypeId(id);
-           User u = this.userRepository.findByUserId(id);
-
-            Bill_of_lading bill = new Bill_of_lading(product,typeProduct,user);
-            this.bill_of_ladingRepository.save(bill);
+            User u = this.userRepository.findByUserId(id);
+            this.bill_of_ladingRepository.save(new Bill_of_lading(p, t, u));
 
             Map<String, Object> json = new HashMap<String, Object>();
-                json.put("success", true);
-                json.put("status", "save");
+            json.put("success", true);
+            json.put("status", "save");
 
-                HttpHeaders headers = new HttpHeaders();
-                headers.add("Content-Type", "application/json; charset=UTF-8");
-                headers.add("X-Fsl-Location", "/");
-                headers.add("X-Fsl-Response-Code", "302");
-                return  (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.OK));
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json; charset=UTF-8");
+            headers.add("X-Fsl-Location", "/");
+            headers.add("X-Fsl-Response-Code", "302");
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.OK));
 
         } catch (NullPointerException e) {
             Map<String, Object> json = new HashMap<String, Object>();
             System.out.println("Error Save CancelReservation");
-             json.put("success", false);
-             json.put("status", "save-false");
+            json.put("success", false);
+            json.put("status", "save-false");
 
             HttpHeaders headers = new HttpHeaders();
             headers.add("Content-Type", "application/json; charset=UTF-8");
             headers.add("X-Fsl-Location", "/");
             headers.add("X-Fsl-Response-Code", "500");
-            return  (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.INTERNAL_SERVER_ERROR));
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.INTERNAL_SERVER_ERROR));
 
         }
     }
 
     
-  /*  @PostMapping("/Bill_of_lading-insert/{id}/product/{product}")
-    @CrossOrigin(origins = "http://localhost:4200")
-    public ResponseEntity<Map<String, Object>> BillLadingSubmit(@PathVariable("id") Long id,@PathVariable("product") Product product) {
-        try {
-          //  Product p =this.productRepository.findByProductId(id);
-           // TypeProduct t = this.typeProductRepository.findByTypeId(id);
-         //  User u = this.userRepository.findByUserId(id);
-
-           // Bill_of_lading bill = new Bill_of_lading(product,typeProduct,user);
-           // this.bill_of_ladingRepository.save(bill);
-           this.productRepository.save(product);
-
-            Map<String, Object> json = new HashMap<String, Object>();
-                json.put("success", true);
-                json.put("status", "save");
-
-                HttpHeaders headers = new HttpHeaders();
-                headers.add("Content-Type", "application/json; charset=UTF-8");
-                headers.add("X-Fsl-Location", "/");
-                headers.add("X-Fsl-Response-Code", "302");
-                return  (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.OK));
-
-        } catch (NullPointerException e) {
-            Map<String, Object> json = new HashMap<String, Object>();
-            System.out.println("Error Save CancelReservation");
-             json.put("success", false);
-             json.put("status", "save-false");
-
-            HttpHeaders headers = new HttpHeaders();
-            headers.add("Content-Type", "application/json; charset=UTF-8");
-            headers.add("X-Fsl-Location", "/");
-            headers.add("X-Fsl-Response-Code", "500");
-            return  (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.INTERNAL_SERVER_ERROR));
-
-        }
-    }*/
 
 }
