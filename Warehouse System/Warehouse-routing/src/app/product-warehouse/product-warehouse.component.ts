@@ -15,16 +15,13 @@ export class ProductWarehouseComponent implements OnInit {
   product = { productId: '', name: '', price: '', Qty: '' }
   typeproduct = { typeId: '', nametype: '' }
   Users = { userId: '', username: '', password: '' }
-  user:any ={}
+  user: any = {}
 
   date = { date: '' }
   bill_of_lading: any = {};
 
   setStep(index: number) {
     this.step = index;
-  }
-  public AAA() {
-    console.log(this.data)
   }
   nextStep() {
     this.step++;
@@ -40,9 +37,13 @@ export class ProductWarehouseComponent implements OnInit {
     this.product = { productId: this.idlast, name: this.data.name, price: this.data.price, Qty: this.data.Qty }
     this.typeproduct = { typeId: this.idlast, nametype: this.data.typeProduct }
     this.Users = { userId: this.idlast, username: this.user.name, password: this.user.pass }
-this.app.submitBillLading(this.idlast,this.product,this.typeproduct,this.Users).subscribe(data=>{
-  console.log(data)
-})
+
+    /*this.app.submitBillLading(this.idlast, this.product, this.typeproduct, this.Users).subscribe(data => {
+      console.log(data)
+    })*/
+    this.app.sumbbitproduct(this.idlast, this.product).subscribe(data => {
+      console.log(data)
+    })
 
 
   }
@@ -63,12 +64,12 @@ this.app.submitBillLading(this.idlast,this.product,this.typeproduct,this.Users).
     this.route.params.subscribe(prams => {
       //this.user = prams
       this.user = prams;
-     // console.log(this.user)
+      // console.log(this.user)
     })
 
     this.app.getdata(this.bill_of_lading, () => {
       this.bill_of_lading = this.app.bill_of_lading;
-     // console.log(this.bill_of_lading.length)
+      // console.log(this.bill_of_lading.length)
       this.idlast = this.bill_of_lading.length + 1;
     })
 

@@ -18,6 +18,12 @@ export class ProductService {
     return this.http.post(this.SUBMIT+BillId+'/Product/'+product + '/TypeProduct/' + typeproduct + '/User/' +user,{});
   }
 
+  sumbbitproduct(billId:String , product:object):Observable<any>{
+    
+    return this.http.post(this.SUBMIT+billId+'/Product/'+product ,{});
+
+  }
+
   getdata(bill,callback){
     this.http.get(this.API + '/Bill_of_lading-list').subscribe(data =>{
       this.bill_of_lading = data;
