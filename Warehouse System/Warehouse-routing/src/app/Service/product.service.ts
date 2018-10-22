@@ -11,7 +11,7 @@ export class ProductService {
 
   }
 
-  submitBillLading(BillId:String,product:object,typeproduct:object,user:object ):Observable<any>{
+  submitBillLading(BillId:String,product:object,typeproduct:any,user:object ):Observable<any>{
     console.log(product)
     console.log(typeproduct)
     console.log(user)
