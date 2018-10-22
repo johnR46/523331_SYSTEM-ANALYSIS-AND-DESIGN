@@ -49,7 +49,7 @@ class Bill_of_ladingController {
         return bill_of_ladingRepository.findAll().stream().collect(Collectors.toList());
     }
 
-   /* @PostMapping("/Bill_of_lading-insert/{id}/product/{product}/typeproduct/{typeproduct}/user/{user}")
+    @PostMapping("/Bill_of_lading-insert/{id}/product/{product}/typeproduct/{typeproduct}/user/{user}")
     @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<Map<String, Object>> BillLadingSubmit(@PathVariable("id") Long id,
             @PathVariable("product") Product product, @PathVariable("typeproduct") TypeProduct typeProduct,
@@ -87,8 +87,8 @@ class Bill_of_ladingController {
         }
     }
 
-    */
-    @PostMapping("/Bill_of_lading-insert/{id}/product/{product}")
+    
+  /*  @PostMapping("/Bill_of_lading-insert/{id}/product/{product}")
     @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<Map<String, Object>> BillLadingSubmit(@PathVariable("id") Long id,@PathVariable("product") Product product) {
         try {
@@ -123,6 +123,6 @@ class Bill_of_ladingController {
             return  (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.INTERNAL_SERVER_ERROR));
 
         }
-    }
+    }*/
 
 }
