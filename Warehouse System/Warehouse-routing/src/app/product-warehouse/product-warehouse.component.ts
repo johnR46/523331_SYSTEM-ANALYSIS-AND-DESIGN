@@ -37,12 +37,45 @@ export class ProductWarehouseComponent implements OnInit {
     this.product = { productId: this.idlast, name: this.data.name, price: this.data.price, Qty: this.data.Qty }
     this.typeproduct = { typeId: this.idlast, nametype: this.data.typeProduct }
     this.Users = { userId: this.idlast, username: this.user.name, password: this.user.pass }
+  //  console.log('price')
+    //console.log(this.product.price);
+    this.app.sumbitproduct(Number(this.product.productId),this.product.name,Number(this.product.price),Number(this.product.Qty)).subscribe(data=>{
+    console.log(data);
+    if(data.status == "save"){
+      alert('save product ok')
+    } else{
+      alert('save product faild')
+    }
+    })
 
-    /*this.app.submitBillLading(this.idlast, this.product, this.typeproduct, this.Users).subscribe(data => {
-      console.log(data)
-    })*/
-    this.app.sumbbitproduct(this.idlast, this.product).subscribe(data => {
-      console.log(data)
+    this.app.sumbittyproduct(Number(this.typeproduct.typeId),this.typeproduct.nametype).subscribe(data=>{
+      console.log(data);
+      if(data.status == "save"){
+        alert('save typeproduct ok')
+      } else{
+        alert('save typeproduct faild')
+      }
+    })
+
+
+    this.app.sumbittuser(Number(this.Users.userId),this.Users.username,this.Users.password).subscribe(data=>{
+      console.log(data);
+      if(data.status == "save"){
+        alert('save user ok')
+      } else{
+        alert('save user faild')
+      }
+    })
+
+    
+  this.app.submitBillLading(this.idlast).subscribe(data => {
+    if(data.status == "save"){
+      alert('save Bill of lading  ok')
+    } else{
+      alert('save bill of lading faild')
+    }
+
+
     })
 
 
