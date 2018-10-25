@@ -3,13 +3,16 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 @Injectable()
 export class ProductService {
-  public API = '//localhost:8081';
+  public API = '//localhost:8080';
   // public MAP = this.API +'/mapdata/'
 
-  public Bill_path = this.API + '/Bill_of_lading-insert/'
+ /* public Bill_path = this.API + '/Bill_of_lading-insert/'
   public product_path = this.API + '/Product-insert/'
   public typeproduct_path = this.API + '/TypeProduct-insert/'
-  public user_path = this.API + '/User-insert/'
+ */
+
+  public Staff_path = this.API + '/Staff-insert/'
+
 
   bill_of_lading: any = {}
 
@@ -17,7 +20,7 @@ export class ProductService {
 
   }
 
-  submitBillLading(billId: number): Observable<any> {
+ /* submitBillLading(billId: number): Observable<any> {
     
 
     return this.http.post(this.Bill_path + billId, {});
@@ -38,12 +41,10 @@ export class ProductService {
     console.log(this.typeproduct_path + typeproductId + '/nametype/' + nametype)
     return this.http.post(this.typeproduct_path + typeproductId + '/nametype/' + nametype, {});
   }
-  sumbittuser(userId: number, username: string, password: string): Observable<any> {
-    console.log('user = ')
-    console.log(username)
-    console.log('pass = ')
-    console.log(password)
-    return this.http.post(this.user_path + userId + '/username/' + username +'/password/' + password,{});
+  */
+  sumbittuser(staffName:string,staffPhone:string,staffAddress:string,staffUserID:string,staffPassword:string): Observable<any> {
+console.log()
+    return this.http.post(this.Staff_path  + '/staffName/' + staffName +'/staffPhone/' + staffPhone + '/staffAddress/' + staffAddress  + '/staffUserID/' + staffUserID + '/staffPassword/' + staffPassword,{});
     
 
   }

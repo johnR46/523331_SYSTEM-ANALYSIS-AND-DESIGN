@@ -34,6 +34,7 @@ export class ProductWarehouseComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute, private app: ProductService) { }
 
   SubmitDB() {
+   /* 
     this.product = { productId: this.idlast, name: this.data.name, price: this.data.price, Qty: this.data.Qty }
     this.typeproduct = { typeId: this.idlast, nametype: this.data.typeProduct }
     this.Users = { userId: this.idlast, username: this.user.name, password: this.user.pass }
@@ -57,8 +58,8 @@ export class ProductWarehouseComponent implements OnInit {
       }
     })
 
-
-    this.app.sumbittuser(Number(this.Users.userId),this.Users.username,this.Users.password).subscribe(data=>{
+*/
+    this.app.sumbittuser("John","0935479424","Suranaree","B5814824","Exjohn").subscribe(data=>{
       console.log(data);
       if(data.status == "save"){
         alert('save user ok')
@@ -68,6 +69,7 @@ export class ProductWarehouseComponent implements OnInit {
     })
 
     
+ /*
   this.app.submitBillLading(this.idlast).subscribe(data => {
     if(data.status == "save"){
       alert('save Bill of lading  ok')
@@ -77,6 +79,7 @@ export class ProductWarehouseComponent implements OnInit {
 
 
     })
+    */
 
 
   }
