@@ -39,11 +39,10 @@ import { RoutingMainModule } from "./routing-main/routing-main.module";
 
 // PEAK
 import { LoginUserComponent } from './loginuser/loginuser.component';
-import { AddAddressComponent } from './add-address/add-address.component';
 import { DeliveryListComponent } from './delivery-list/delivery-list.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { HomeComponent } from './home/home.component';
-
+import { DeliveryLoginComponent } from './delivery-login/delivery-login.component';
 import { DeliveryService } from './Service/delivery.service';
 
 //PEAK
@@ -57,10 +56,19 @@ import { ProductService } from './Service/product.service';
 import { AppserviceService } from './Service/appservice.service';
 
 
+// BOW
+
+import { RegisterComponent } from './register/register.component';
+import { RegisterShowComponent } from './register-show/register-show.component';
+//BOW
+
+
 @NgModule({
   declarations: [
-    AppComponent,AddAddressComponent,DeliveryListComponent,DeliveryComponent,LoginUserComponent,HomeComponent,
+    AppComponent,DeliveryLoginComponent,DeliveryListComponent,DeliveryComponent,LoginUserComponent,HomeComponent,
     BillWarehouseComponent,ProductWarehouseComponent,SelectWarehouseComponent,
+    RegisterComponent,
+    RegisterShowComponent
   ],
   imports: [
     RoutingMainModule,
