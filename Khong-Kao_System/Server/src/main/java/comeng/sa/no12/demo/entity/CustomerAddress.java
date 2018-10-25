@@ -21,10 +21,8 @@ public class CustomerAddress {
 	private String district;
     private String city;
     private String country;
-	private Integer zipCode;
-    //private @NonNull String phone;
-    //private @NonNull String email;
-
+    private Integer zipCode;
+    
 	@OneToMany(mappedBy = "customerAddress")
     private List<Orders> orders = new ArrayList<Orders>();
 

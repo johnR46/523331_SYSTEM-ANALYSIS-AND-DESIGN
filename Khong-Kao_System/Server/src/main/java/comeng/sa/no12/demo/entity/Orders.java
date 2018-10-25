@@ -30,8 +30,7 @@ public class Orders {
         this.productName = productName;
     }
 
-	 @OneToMany(mappedBy = "orders")
-     private List<Product> product = new ArrayList<Product>();
+	
 
 	 @ManyToOne(fetch = FetchType.LAZY)
      @JoinColumn(name = "CustomerAddress")

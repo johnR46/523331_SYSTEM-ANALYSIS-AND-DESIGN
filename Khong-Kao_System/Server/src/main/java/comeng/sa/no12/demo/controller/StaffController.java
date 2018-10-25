@@ -59,45 +59,7 @@ class StaffController {
         return staffRepository.findBystaffPassword(staffPassword);
     }
 
-    @PostMapping("/Staff-insert/staffName/{staffName}/staffPhone/{staffPhone}/staffAddress/{staffAddress}/staffUserID/{staffUserID}/staffPassword/{staffPassword}")
-    @CrossOrigin(origins = "http://localhost:4200")
-    public ResponseEntity<Map<String, Object>> StaffSubmit(@PathVariable("staffName") String staffName,
-    @PathVariable("staffPhone") String staffPhone,  @PathVariable("staffAddress") String staffAddress, 
-    @PathVariable("staffUserID") String staffUserID , @PathVariable("staffPassword") String staffPassword) {
-      
-        
-        try {
-           
-            Staff s = new Staff(staffName, staffPhone,staffAddress,staffUserID,staffPassword);
 
-            this.staffRepository.save(s);
-
-            Map<String, Object> json = new HashMap<String, Object>();
-            json.put("success", true);
-            json.put("status", "save");
-
-            HttpHeaders headers = new HttpHeaders();
-            headers.add("Content-Type", "application/json; charset=UTF-8");
-            headers.add("X-Fsl-Location", "/");
-            headers.add("X-Fsl-Response-Code", "302");
-            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.OK));
-
-        } catch (NullPointerException e) {
-            Map<String, Object> json = new HashMap<String, Object>();
-            System.out.println("Error Save CancelReservation");
-            json.put("success", false);
-            json.put("status", "save-false");
-
-            HttpHeaders headers = new HttpHeaders();
-            headers.add("Content-Type", "application/json; charset=UTF-8");
-            headers.add("X-Fsl-Location", "/");
-            headers.add("X-Fsl-Response-Code", "500");
-            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.INTERNAL_SERVER_ERROR));
-
-        }
-
-
-    }
 
     @PostMapping("/Staffs/staffUserID/{staffUserID}/staffPassword/{staffPassword}")
     @CrossOrigin(origins = "http://localhost:4200")

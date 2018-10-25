@@ -19,20 +19,18 @@ public class DatabaseLoader implements ApplicationRunner{
     private final DeliveryRepository deliveryRepository;
     private final CustomerAddressRepository customerAddressRepository;
     private final OrdersRepository ordersRepository;
-    private final ProductRepository productRepository;
+
 
     @Autowired
     public DatabaseLoader(StaffRepository staffRepository,
     CustomerRepository customerRepository,
     DeliveryRepository deliveryRepository,
     CustomerAddressRepository customerAddressRepository,
-    OrdersRepository ordersRepository,
-    ProductRepository productRepository) {
+    OrdersRepository ordersRepository) {
         this.staffRepository = staffRepository;
         this.customerRepository = customerRepository;
         this.customerAddressRepository = customerAddressRepository;
         this.deliveryRepository = deliveryRepository;
-        this.productRepository = productRepository;
         this.ordersRepository = ordersRepository;
     }
 
@@ -110,21 +108,6 @@ public class DatabaseLoader implements ApplicationRunner{
    
         this.deliveryRepository.save(d1);
         this.deliveryRepository.save(d2);
-
-        // Product
-        Product p1 = new Product();
-        p1.setProductId(8898L);
-        p1.setProductName("Nuke-Cola");
-        p1.setProductPrice(34L);
-        p1.setProductType(4L);
-        this.productRepository.save(p1);
-
-        Product p2 = new Product();
-        p2.setProductId(8898L);
-        p2.setProductName("Nuke-Quantum-Cola");
-        p2.setProductPrice(999L);
-        p2.setProductType(4L);
-        this.productRepository.save(p2);
 
         // Orders
         Orders o1 = new Orders();

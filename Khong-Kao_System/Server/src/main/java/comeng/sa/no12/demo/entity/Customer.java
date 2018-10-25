@@ -1,5 +1,4 @@
 package comeng.sa.no12.demo.entity;
-
 import lombok.*;
 import java.util.*;
 import javax.persistence.*;
@@ -26,10 +25,6 @@ public class Customer {
 	private Long addressId;
     private String customerphone;
     private String customeremail;
-	//private @NonNull String username;
-    //private @NonNull String password;
-
-   
 
 	@OneToMany(mappedBy = "customer")
     private List<CustomerAddress> customerAddress = new ArrayList<CustomerAddress>();
