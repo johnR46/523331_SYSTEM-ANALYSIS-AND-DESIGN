@@ -23,15 +23,20 @@ public class CustomerAddress {
     private String country;
     private Integer zipCode;
     
-	@OneToMany(mappedBy = "customerAddress")
-    private List<Orders> orders = new ArrayList<Orders>();
+	//@OneToMany(mappedBy = "customerAddress")
+   // private List<Orders> orders = new ArrayList<Orders>();
 
 	 @ManyToOne(fetch = FetchType.LAZY)
-     @JoinColumn(name = "Customer")
+     @JoinColumn(name = "customerId")
      private Customer customer;
 
 	 @ManyToOne(fetch = FetchType.LAZY)
-     @JoinColumn(name = "Delivery")
+     @JoinColumn(name = "deliveryId")
      private Delivery delivery;
+
+     
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "provinceId", insertable = true)
+    private Province province;
 
 }

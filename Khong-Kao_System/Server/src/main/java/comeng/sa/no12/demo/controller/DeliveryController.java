@@ -1,4 +1,5 @@
 package comeng.sa.no12.demo.controller;
+
 import comeng.sa.no12.demo.entity.*;
 import comeng.sa.no12.demo.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,26 +28,22 @@ class DeliveryController {
     private StaffRepository staffRepository;
     @Autowired
     private CustomerAddressRepository customerAddressRepository;
-    
+
     private DeliveryRepository deliveryRepository;
 
     public DeliveryController(DeliveryRepository deliveryRepository) {
         this.deliveryRepository = deliveryRepository;
     }
 
-    @GetMapping(path = "/delivery", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path = "/Delivery-list", produces = MediaType.APPLICATION_JSON_VALUE)
     public Collection<Delivery> Delivery() {
         return deliveryRepository.findAll().stream().collect(Collectors.toList());
     }
 
-
-    @GetMapping("/delivery/{id}")
+    @GetMapping("/Delivery/{id}")
     @CrossOrigin(origins = "http://localhost:4200")
     public Delivery deliveryfind(@PathVariable("id") Long id) {
         return deliveryRepository.findByDeliveryId(id);
     }
-
-    
-
 
 }

@@ -9,6 +9,11 @@ import javax.validation.constraints.NotNull;
 
 
 @Entity
+@Getter
+@Setter
+@ToString
+@EqualsAndHashCode
+@NoArgsConstructor
 @Data // lombox จะสร้าง method getter setter ให้เอง
 @Table(name = "Item") // ชื่อตาราง
 
@@ -24,9 +29,11 @@ public class Item {
         private @NonNull String Itemdescripton;
 
         private @NonNull Double price;
-        private @NonNull Double Qty;
+        private @NonNull Integer Qty;
 
-        public Item(String Itemname, String Itemdescripton, Double price, Double Qty) {
+      
+        public Item(String Itemdescripton,String Itemname, Integer Qty,  Double price,Long itemId) {
+                this.itemId = itemId;
                 this.Itemname = Itemname;
                 this.Itemdescripton = Itemdescripton;
                 this.price = price;

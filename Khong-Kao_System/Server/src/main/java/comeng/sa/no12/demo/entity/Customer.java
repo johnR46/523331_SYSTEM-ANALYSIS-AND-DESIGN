@@ -26,13 +26,19 @@ public class Customer {
     private String customerphone;
     private String customeremail;
 
+
 	@OneToMany(mappedBy = "customer")
     private List<CustomerAddress> customerAddress = new ArrayList<CustomerAddress>();
 
 	@OneToMany(mappedBy = "customer")
     private List<Orders> orders = new ArrayList<Orders>();
 
-   
+    @OneToMany(mappedBy = "postedId")
+    private List<Posted> posted = new ArrayList<Posted>();
+
+    @ManyToOne(fetch = FetchType.LAZY)
+     @JoinColumn(name = "genderId")
+     private Gender gender;
         
     
 }

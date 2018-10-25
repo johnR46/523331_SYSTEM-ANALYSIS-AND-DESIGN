@@ -26,7 +26,7 @@ class StaffController {
         this.staffRepository = staffRepository;
     }
 
-    @GetMapping("/Staffs")
+    @GetMapping("/Staffs-list")
     @CrossOrigin(origins = "http://localhost:4200")
     public Collection<Staff> Staff() {
         return staffRepository.findAll().stream().collect(Collectors.toList());

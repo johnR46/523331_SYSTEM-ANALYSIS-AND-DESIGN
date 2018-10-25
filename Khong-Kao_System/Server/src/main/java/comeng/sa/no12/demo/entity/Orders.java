@@ -20,9 +20,6 @@ public class Orders {
 
     private @NonNull Long orderId;
 	private @NonNull String productName;
-    //private @NonNull Integer customer_id;
-	//private @NonNull Integer address_id;
-	//private @NonNull Integer product_id;
     private @NonNull Date orderDate;
     
     public Orders(Long orderId, String productName){
@@ -32,10 +29,10 @@ public class Orders {
 
 	
 
-	 @ManyToOne(fetch = FetchType.LAZY)
+/*	 @ManyToOne(fetch = FetchType.LAZY)
      @JoinColumn(name = "CustomerAddress")
      private CustomerAddress customerAddress;
-
+*/
 	 @ManyToOne(fetch = FetchType.LAZY)
      @JoinColumn(name = "Customer")
      private Customer customer;
@@ -43,4 +40,8 @@ public class Orders {
 	 @ManyToOne(fetch = FetchType.LAZY)
      @JoinColumn(name = "Delivery")
      private Delivery delivery;
+
+     
+    // @OneToMany(mappedBy = "Orders")
+    // private List<ListItem> listItem = new ArrayList<ListItem>();
 }

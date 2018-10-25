@@ -21,21 +21,21 @@ import java.util.stream.Collectors;
 
 class CustomerController {
 
-	@Autowired  
-	private final CustomerRepository customerRepository;
+    @Autowired
+    private final CustomerRepository customerRepository;
 
     public CustomerController(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
 
-	  @GetMapping("/Customer")
-    public Collection<Customer> Customer(){
+    @GetMapping("/Customer-list")
+    public Collection<Customer> Customer() {
         return customerRepository.findAll().stream().collect(Collectors.toList());
-        }
-        
-        @GetMapping("/Customer/getByID/{customerId}")
-        public Customer Customer(@PathVariable Long customerId) {
-            Customer customer = customerRepository.findByCustomerId(customerId);
-            return customer;
-        }
+    }
+
+    @GetMapping("/Customer/customerId/{customerId}")
+    public Customer Customer(@PathVariable Long customerId) {
+        Customer customer = customerRepository.findByCustomerId(customerId);
+        return customer;
+    }
 }

@@ -20,18 +20,48 @@ public class DatabaseLoader implements ApplicationRunner{
     private final CustomerAddressRepository customerAddressRepository;
     private final OrdersRepository ordersRepository;
 
+    private final Bill_of_ladingRepository bill_of_ladingRepository;
+    private final TypeItemRepository typeItemRepository;
+    private final ItemRepository itemRepository;
+    private final ListItemRepository listItemRepository;
+    private final ProvinceRepository provinceRepository;
+    private final GenderRepository genderRepository;
+    private final DetailsRepository detailsRepository;
+    private final PostedRepository postedRepository;
+    private final CategoryRepository categoryRepository;
+
 
     @Autowired
     public DatabaseLoader(StaffRepository staffRepository,
     CustomerRepository customerRepository,
     DeliveryRepository deliveryRepository,
     CustomerAddressRepository customerAddressRepository,
-    OrdersRepository ordersRepository) {
+    OrdersRepository ordersRepository,
+    Bill_of_ladingRepository bill_of_ladingRepository,
+    TypeItemRepository typeItemRepository,
+    ItemRepository itemRepository,
+    ListItemRepository listItemRepository,
+    ProvinceRepository provinceRepository,
+    GenderRepository genderRepository,
+    DetailsRepository detailsRepository,
+    PostedRepository postedRepository,
+    CategoryRepository categoryRepository) {
         this.staffRepository = staffRepository;
         this.customerRepository = customerRepository;
         this.customerAddressRepository = customerAddressRepository;
         this.deliveryRepository = deliveryRepository;
         this.ordersRepository = ordersRepository;
+        this.bill_of_ladingRepository = bill_of_ladingRepository;
+        this.typeItemRepository = typeItemRepository;
+        this.itemRepository = itemRepository;
+
+        this.listItemRepository = listItemRepository;
+        this.provinceRepository = provinceRepository;
+        this.genderRepository = genderRepository;
+        this.detailsRepository = detailsRepository;
+        this.postedRepository = postedRepository;
+        this.categoryRepository = categoryRepository;
+       
     }
 
     @Override 
@@ -122,6 +152,10 @@ public class DatabaseLoader implements ApplicationRunner{
         o2.setProductName("Nuke-Quantum-Cola");
         o2.setOrderDate(new Date());
         this.ordersRepository.save(o2);
+
+       Item i1 = new Item("Kuy","Kai Yuay",20,50.5,1L);
+        this.itemRepository.save(i1);
+
 
 
 

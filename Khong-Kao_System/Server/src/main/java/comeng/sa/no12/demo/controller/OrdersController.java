@@ -23,7 +23,7 @@ class OrdersController {
         this.ordersRepository = ordersRepository;
     }
 
-    @GetMapping("/Orders")
+    @GetMapping("/Orders-list")
     public Collection<Orders> Orders(){
         return ordersRepository.findAll().stream().collect(Collectors.toList());
 		}
