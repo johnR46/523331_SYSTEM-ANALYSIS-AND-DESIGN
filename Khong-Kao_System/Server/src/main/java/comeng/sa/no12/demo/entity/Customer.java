@@ -19,36 +19,39 @@ public class Customer {
     @SequenceGenerator(name = "customer_seq", sequenceName = "customer_seq")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "customer_seq")
     private Long customerId;
-
     private String customerName;
-    private Long addressId;
     private String customerphone;
     private String customeremail;
+    private String customerLogin;
+    private String customerPassword;
+    
+    
 
-    @OneToMany(mappedBy = "customer")
-    private List<Posted> posted = new ArrayList<Posted>();
-
+   
   
-
-    @OneToMany(mappedBy = "customer")
-    private List<Orders> orders = new ArrayList<Orders>();
-
-    @OneToMany(mappedBy = "customer")
-    private List<CustomerAddress> customerAddress = new ArrayList<CustomerAddress>();
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "genderId")
     private Gender gender;
 
+    
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "addressId")
+    private CustomerAddress customerAddress;
+
+
     private Customer() {
     }
 
-    public Customer(String customerName, Long addressId, String customerphone, String customeremail) {
-       
+    public Customer(CustomerAddress customerAddress,Gender gender ,String customerName, String customerphone, String customeremail,String customerLogin ,String customerPassword) {
+       this.customerAddress =customerAddress;
+       this.gender = gender;
         this.customerName = customerName;
-        this.addressId = addressId;
         this.customerphone = customerphone;
         this.customeremail = customeremail;
+        this.customerLogin = customerLogin;
+        this.customerPassword = customerPassword;
        
 
     }

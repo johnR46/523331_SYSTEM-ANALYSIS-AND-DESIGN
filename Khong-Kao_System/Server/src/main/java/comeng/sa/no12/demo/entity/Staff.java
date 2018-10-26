@@ -24,11 +24,11 @@ public class Staff {
 	private String staffUserID;
 	private String staffPassword;
 
-	@OneToMany(mappedBy = "staff")
-	private List<Delivery> delivery = new ArrayList<Delivery>();
+	//@OneToMany(mappedBy = "staff")
+//	private List<Delivery> delivery = new ArrayList<Delivery>();
 
-	@OneToMany(mappedBy = "staff")
-	private List<Bill_of_lading> bill = new ArrayList<Bill_of_lading>();
+//	@OneToMany(mappedBy = "staff")
+//	private List<Bill_of_lading> bill = new ArrayList<Bill_of_lading>();
 
 	private Staff() {
 

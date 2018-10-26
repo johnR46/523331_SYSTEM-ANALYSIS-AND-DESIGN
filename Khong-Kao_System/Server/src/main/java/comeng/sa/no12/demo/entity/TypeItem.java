@@ -13,21 +13,21 @@ import java.util.*;
 @Table(name = "typeitem")
 public class TypeItem {
     @Id
-    @SequenceGenerator(name = "typeID_seq", sequenceName = "typeID_seq")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "typeID_seq")
+    @SequenceGenerator(name = "typeId_seq", sequenceName = "typeId_seq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "typeId_seq")
     private Long typeId;
 
     private String nametype;
 
-    @OneToMany(mappedBy = "typeitem")
-    private List<Bill_of_lading> bills = new ArrayList<Bill_of_lading>();
+    // @OneToMany(mappedBy = "typeitem")
+    // private List<Bill_of_lading> bills = new ArrayList<Bill_of_lading>();
 
-    
-private TypeItem(){}
-public TypeItem(String nametype){
-    this.nametype = nametype;
+    private TypeItem() {
+    }
 
-}
+    public TypeItem(String nametype) {
+        this.nametype = nametype;
 
+    }
 
 }

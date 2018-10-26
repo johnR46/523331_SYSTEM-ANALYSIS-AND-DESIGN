@@ -16,25 +16,16 @@ public class ListItem {
     @SequenceGenerator(name = "listItem_seq", sequenceName = "listItem_seq")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "listItem_seq")
     private Long listItemId;
-
-   @OneToMany(mappedBy = "listItem")
-    private List<Item> item = new ArrayList<Item>();
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "orderId")
-    private Orders orders;
-
     
-   /* @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "itemId")
     private Item item;
-*/
- /*   private ListItem() {
+   private ListItem() {
 
     }
 
-    public ListItem( List<Item> item ) {
+    public ListItem( Item  item) {
         this.item = item;
     }
-*/
+
 }

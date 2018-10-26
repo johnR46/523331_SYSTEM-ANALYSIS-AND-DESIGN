@@ -18,25 +18,23 @@ public class Orders {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "orders_seq")
     private Long orderId;
 
-    private String productName;
     private Date orderDate;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "customerId")
     private Customer customer;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "deliveryId")
-    private Delivery delivery;
-
-    @OneToMany(mappedBy = "orders")
-    private List<ListItem> listitem = new ArrayList<ListItem>();
+  
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "listItemId")
+    private ListItem listItem;
 
     private Orders() {
     }
 
-    public Orders(String productName, Date orderDate) {
-        this.productName = productName;
+    public Orders(Customer customer,ListItem listItem,Date orderDate) {
+       this.customer = customer;
+       this.listItem = listItem;
         this.orderDate = orderDate;
 
     }

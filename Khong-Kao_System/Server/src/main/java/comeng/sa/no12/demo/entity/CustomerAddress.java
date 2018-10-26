@@ -25,27 +25,21 @@ public class CustomerAddress {
     private String country;
     private Integer zipCode;
 
-    @OneToMany(mappedBy = "customerAddress")
-    private List<Delivery> delivery = new ArrayList<Delivery>();
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "customerId")
-    private Customer customer;
-
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "provinceId", insertable = true)
     private Province province;
 
     private CustomerAddress() {
     }
 
-    public CustomerAddress(String customerAddress, String customerAddress2, String district, String city,
-            Integer zipCode) {
-                this.customerAddress = customerAddress;
-                this.customerAddress2 = customerAddress2;
-                this.district = district;
-                this.city = city;
-                this.zipCode = zipCode;
+    public CustomerAddress(Province province, String customerAddress, String customerAddress2, String district,
+            String city, Integer zipCode) {
+        this.province = province;
+        this.customerAddress = customerAddress;
+        this.customerAddress2 = customerAddress2;
+        this.district = district;
+        this.city = city;
+        this.zipCode = zipCode;
 
     }
 

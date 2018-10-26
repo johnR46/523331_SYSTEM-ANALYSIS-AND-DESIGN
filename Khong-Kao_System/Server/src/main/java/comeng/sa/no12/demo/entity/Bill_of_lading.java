@@ -21,15 +21,15 @@ public class Bill_of_lading {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "bill_of_lading_seq")
 	private Long billId;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "staffId", nullable = true)
 	private Staff staff;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "itemId", nullable = true)
 	private Item item;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "typeId", nullable = true)
 	private TypeItem typeitem;
 	private  LocalDate date;

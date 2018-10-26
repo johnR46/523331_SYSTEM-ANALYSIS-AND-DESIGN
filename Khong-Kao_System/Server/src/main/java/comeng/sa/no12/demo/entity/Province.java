@@ -19,12 +19,6 @@ public class Province {
         private @NonNull Long provinceId;
         private @NonNull String provinceName;
 
-        @OneToMany(mappedBy = "province")
-        private List<CustomerAddress> customerAddress = new ArrayList<CustomerAddress>();
-
-        private Province() {
-
-        }
 
         public Province(String provinceName) {
                this.provinceName = provinceName;

@@ -17,9 +17,8 @@ public class Delivery {
     @Id
     @SequenceGenerator(name = "delivery_seq", sequenceName = "delivery_seq")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "delivery_seq")
-    @Column(name = "Delivery_ID", unique = true, nullable = true)
-
     private Long deliveryId;
+
     private Date deliveryDate;
     private String trackId;
 
@@ -31,17 +30,20 @@ public class Delivery {
     @JoinColumn(name = "addressId")
     private CustomerAddress customerAddress;
 
-    @OneToMany(mappedBy = "delivery")
-    private List<Orders> orders = new ArrayList<Orders>();
-    
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "ordersId")
+    private Orders orders;
 
     private Delivery() {
     }
 
-    public Delivery(Date deliveryDate, String trackId) {
+    public Delivery(Staff staff, CustomerAddress customerAddress, Orders orders, Date deliveryDate, String trackId) {
+
+        this.staff = staff;
+        this.customerAddress = customerAddress;
+        this.orders = orders;
         this.deliveryDate = deliveryDate;
         this.trackId = trackId;
-
 
     }
 

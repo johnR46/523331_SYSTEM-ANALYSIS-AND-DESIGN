@@ -23,13 +23,6 @@ public class Item {
         private  Double price;
         private  Integer Qty;
 
-        @ManyToOne(fetch = FetchType.LAZY)
-        @JoinColumn(name = "listItemId")
-        private ListItem listItem;
-
-        @OneToMany(mappedBy = "item")
-        private List<Bill_of_lading> bill = new ArrayList<Bill_of_lading>();
-
 		
 private Item(){}
 public Item(String Itemname,String Itemdescripton, Double price,Integer Qty){
