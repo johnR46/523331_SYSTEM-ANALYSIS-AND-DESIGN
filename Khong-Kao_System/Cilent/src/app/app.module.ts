@@ -42,11 +42,16 @@ import { LoginUserComponent } from './loginuser/loginuser.component';
 import { DeliveryListComponent } from './delivery-list/delivery-list.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { HomeComponent } from './home/home.component';
-import { DeliveryLoginComponent } from './delivery-login/delivery-login.component';
+import { StaffLoginComponent } from './staff-login/staff-login.component';
 import { DeliveryService } from './Service/delivery.service';
+import { LoginUserService } from './Service/login-user.service';
+import { LoginStaffService } from './Service/login-staff.service';
+import { StaffDeliveryLoginComponent } from './staffDelivery-login/staffDelivery-login.component';
+
+import { StaffDeliveryLoginService } from './Service/staff-delivery-login.service';
 
 //PEAK
-
+import { DeliveryListService } from './Service/delivery-list.service';
 //John
 import { BillWarehouseComponent } from './bill-warehouse/bill-warehouse.component';
 import { SelectWarehouseComponent } from './select-warehouse/select-warehouse.component';
@@ -65,9 +70,10 @@ import { RegisterShowComponent } from './register-show/register-show.component';
 
 @NgModule({
   declarations: [
-    AppComponent,DeliveryLoginComponent,DeliveryListComponent,DeliveryComponent,LoginUserComponent,HomeComponent,
+    AppComponent,StaffLoginComponent,DeliveryListComponent,DeliveryComponent,LoginUserComponent,HomeComponent,
     BillWarehouseComponent,ProductWarehouseComponent,SelectWarehouseComponent,
     RegisterComponent,
+    StaffDeliveryLoginComponent,
     RegisterShowComponent
   ],
   imports: [
@@ -114,8 +120,8 @@ import { RegisterShowComponent } from './register-show/register-show.component';
     
    
   ],
-  providers: [BillOfladingService,ProductService,AppserviceService,
-  DeliveryService],
+  providers: [BillOfladingService,ProductService,AppserviceService,LoginUserService,LoginStaffService,StaffDeliveryLoginService,
+  DeliveryService,DeliveryListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

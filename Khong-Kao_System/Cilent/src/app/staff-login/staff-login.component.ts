@@ -1,17 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginUserService } from '../Service/login-user.service';
+import { LoginStaffService } from '../Service/login-staff.service';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+
 @Component({
-  selector: 'app-loginuser',
-  templateUrl: './loginuser.component.html',
-  styleUrls: ['./loginuser.component.css']
+  selector: 'app-staff-login',
+  templateUrl: './staff-login.component.html',
+  styleUrls: ['./staff-login.component.css']
 })
-export class LoginUserComponent implements OnInit {
+export class StaffLoginComponent implements OnInit {
 
-credentials = {username: '', password: ''};
+  credentials = {username: '', password: ''};
+  constructor(private app:LoginStaffService ,private router: Router, private http: HttpClient) {}
 
-constructor(private app:LoginUserService ,private router: Router, private http: HttpClient) {}
+
+  ngOnInit() {
+  }
+
   Autention(){
     console.log(this.credentials)
 
@@ -21,7 +26,8 @@ constructor(private app:LoginUserService ,private router: Router, private http: 
      else {
       this.app.authenticate(this.credentials,()=>{
         if(this.app.authenticated){
-         this.router.navigate(['home',{}]);
+       
+         this.router.navigate(['select',this.credentials])
         }else{
         alert('No User ')
         }
@@ -30,10 +36,6 @@ constructor(private app:LoginUserService ,private router: Router, private http: 
     }
 
     
-  }
-
-
-  ngOnInit() {
   }
 
 }

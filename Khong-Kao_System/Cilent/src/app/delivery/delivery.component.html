@@ -19,11 +19,13 @@
 
       <a mat-stroked-button routerLink="/">เสนอขายของเก่า</a>
 
-      <a mat-stroked-button routerLink="/delivery">รายการจัดส่ง</a>
+     <a mat-stroked-button routerLink="/delivery-list">ดูรายการจัดส่งสินค้า</a>
+
+      <a mat-stroked-button routerLink="/staffDeliveryLogin">รายการจัดส่ง</a>
 
       <a mat-stroked-button routerLink="/home">ติดต่อร้าน</a>
 
-      <a mat-stroked-button routerLink="/bill">จัดการคลังสินค้า</a>
+      <a mat-stroked-button routerLink="/stafflogin">จัดการคลังสินค้า</a>
 
       <a mat-stroked-button routerLink="">ออกจากระบบ</a>
 
@@ -38,47 +40,15 @@
 
 
 &nbsp;
-<mat-card class="delivery-card">
-  
-<mat-card>
-
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <input matInput placeholder="Order ID" value="15454">
-  </mat-form-field>
-
-  <mat-form-field class="example-full-width">
-    <textarea matInput placeholder="Track ID" value="EMS5556789TH" ></textarea>
-  </mat-form-field>
-</form>
-
-<div class="example-container">
-
-  <mat-form-field>
-    <input matInput placeholder="ชื่อ-นามสกุล">
-  </mat-form-field>
-
-  <mat-form-field>
-    <textarea matInput placeholder="Address" value = "591 อาคารดิออร์เร้น อพาร์ตเม้น ห้อง 217 ชั้น 2 หมู่บ้านหนองบง หมู่ 5 ต.สุรนารี, อ.เมืองนครราชสีมา, นครราชสีมา 30000 Thailand"></textarea>
-  </mat-form-field>
-
-  <mat-form-field>
-    <mat-select placeholder="Delivery status">
-      <mat-option value="option">ยังไม่ได้จัดส่ง</mat-option>
-      <mat-option value="option">กำลังจัดส่ง</mat-option>
-    </mat-select>
-  </mat-form-field>
-</div>
 
 
+<mat-card class="example-card">
+    <!-- <a mat-raised-button routerLink="/messenger-view" color="warn" >View Messenger Order History</a> -->
+  <mat-card-content style="text-align:center">
 
-  <mat-card-actions>
-    <div class="button-address" align="center">
-      <a mat-stroked-button routerLink="/home">ยืนยัน</a>
-      &nbsp;
-    </div>
+  </mat-card-content>sd
+  <mat-card-actions style="text-align:right">
+
   </mat-card-actions>
-</mat-card>
-&nbsp;
 
 </mat-card>

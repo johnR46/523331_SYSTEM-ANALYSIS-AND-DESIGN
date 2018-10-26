@@ -9,12 +9,11 @@ import { LoginUserComponent } from '../loginuser/loginuser.component';
 import { DeliveryComponent } from '../delivery/delivery.component';
 import { HomeComponent } from '../home/home.component';
 import { DeliveryListComponent } from '../delivery-list/delivery-list.component';
-
-
+import { StaffLoginComponent } from '../staff-login/staff-login.component';
 
 import { RegisterComponent } from '../register/register.component';
 import { RegisterShowComponent } from '../register-show/register-show.component';
-
+import { StaffDeliveryLoginComponent } from '../staffDelivery-login/staffDelivery-login.component';
 import { from } from 'rxjs';
 
 const routes: Routes = [
@@ -24,13 +23,13 @@ const routes: Routes = [
   { path: 'bill', component: BillWarehouseComponent },
 
   //PECK
-
+  { path: 'staffDeliveryLogin', component: StaffDeliveryLoginComponent },
   { path: 'select', component: SelectWarehouseComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'deliverylist', component: DeliveryListComponent },
+  { path: 'delivery-list', component: DeliveryListComponent },
   { path: 'delivery', component: DeliveryComponent },
   { path: '', component: LoginUserComponent },
-
+  { path: 'stafflogin', component: StaffLoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'register-show', component: RegisterShowComponent },
 ];

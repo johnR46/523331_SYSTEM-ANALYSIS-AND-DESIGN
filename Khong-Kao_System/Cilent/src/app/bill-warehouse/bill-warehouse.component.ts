@@ -12,9 +12,8 @@ import { BillOfladingService } from '../Service/bill-oflading.service';
 })
 export class BillWarehouseComponent implements OnInit {
   data: any = {}
-
   bill_of_lading = {
-    billId: '', product: { productId: '', name: '', price: '', qty: '' },
+    billId: '', product: { productId: '', name: '', price: '', qty: '',itemdescripton:'' },
     typeproduct: { typeId: '', nametype: '' }, user: { userId: '', username: '', password: '' }, date: ''
   };
 

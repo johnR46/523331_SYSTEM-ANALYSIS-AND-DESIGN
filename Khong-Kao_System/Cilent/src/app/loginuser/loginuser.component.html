@@ -14,11 +14,13 @@
 <form class="example-form">
 <mat-card>
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="ID" value="15454">
+      <input matInput placeholder="username "  [(ngModel)]="credentials.username"
+      required name="username" #username >
   </mat-form-field>
 
    <mat-form-field class="example-full-width">
-    <input matInput placeholder="Password" value="15454">
+    <input matInput placeholder="password " type = "password" [(ngModel)]="credentials.password"
+      required name="password" #password >
   </mat-form-field>
 </mat-card>
   
@@ -32,7 +34,8 @@
 
   <mat-card-actions>
     <div class="button-address" align="center">
-      <a mat-stroked-button routerLink="/home">เข้าสู่ระบบ</a>
+    
+         <button mat-button color="primary" (click)="Autention()">เข้าสู่ระบบ</button>
       <a mat-stroked-button routerLink="/register">สมัครสมาชิก</a>
       &nbsp;
     </div>

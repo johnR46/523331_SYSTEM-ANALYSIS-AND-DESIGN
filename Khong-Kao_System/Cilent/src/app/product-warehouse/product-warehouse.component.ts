@@ -11,8 +11,11 @@ export class ProductWarehouseComponent implements OnInit {
   step = 0;
   data: any = {}
   idlast: any;
+  staffId:any;
+  staff : any = {}
 
-  product = { productId: '', name: '', price: '', Qty: '' }
+
+  product = { productId: '', name: '', price: '', Qty: '' , itemdescripton:''}
   typeproduct = { typeId: '', nametype: '' }
   Users = { userId: '', username: '', password: '' }
   user: any = {}
@@ -33,14 +36,14 @@ export class ProductWarehouseComponent implements OnInit {
 
   constructor(private router: Router, private route: ActivatedRoute, private app: ProductService) { }
 
+
   SubmitDB() {
-   /* 
-    this.product = { productId: this.idlast, name: this.data.name, price: this.data.price, Qty: this.data.Qty }
+    this.product = { productId: this.idlast, name: this.data.name, price: this.data.price, Qty: this.data.Qty , itemdescripton: this.data.itemdescripton}
     this.typeproduct = { typeId: this.idlast, nametype: this.data.typeProduct }
     this.Users = { userId: this.idlast, username: this.user.name, password: this.user.pass }
   //  console.log('price')
     //console.log(this.product.price);
-    this.app.sumbitproduct(Number(this.product.productId),this.product.name,Number(this.product.price),Number(this.product.Qty)).subscribe(data=>{
+    this.app.sumbitproduct(Number(this.product.productId),this.product.name,Number(this.product.price),Number(this.product.Qty),String(this.data.itemdescripton)).subscribe(data=>{
     console.log(data);
     if(data.status == "save"){
       alert('save product ok')
@@ -49,7 +52,7 @@ export class ProductWarehouseComponent implements OnInit {
     }
     })
 
-    this.app.sumbittyproduct(Number(this.typeproduct.typeId),this.typeproduct.nametype).subscribe(data=>{
+  this.app.sumbittyproduct(Number(this.typeproduct.typeId),this.typeproduct.nametype).subscribe(data=>{
       console.log(data);
       if(data.status == "save"){
         alert('save typeproduct ok')
@@ -58,19 +61,11 @@ export class ProductWarehouseComponent implements OnInit {
       }
     })
 
-*/
-    this.app.sumbittuser("John","0935479424","Suranaree","B5814824","Exjohn").subscribe(data=>{
-      console.log(data);
-      if(data.status == "save"){
-        alert('save user ok')
-      } else{
-        alert('save user faild')
-      }
-    })
 
-    
- /*
-  this.app.submitBillLading(this.idlast).subscribe(data => {
+
+
+   
+  this.app.submitBillLading(this.idlast,this.staffId).subscribe(data => {
     if(data.status == "save"){
       alert('save Bill of lading  ok')
     } else{
@@ -79,14 +74,17 @@ export class ProductWarehouseComponent implements OnInit {
 
 
     })
-    */
 
 
+  }
+  gotobill(){
+
+    this.router.navigate(['bill'],{})
   }
 
   showDB() {
     //console.log(this.data.name)
-    this.product = { productId: this.idlast, name: this.data.name, price: this.data.price, Qty: this.data.Qty }
+    this.product = { productId: this.idlast, name: this.data.name, price: this.data.price, Qty: this.data.Qty , itemdescripton: this.data.itemdescripton}
     console.log(this.product);
     this.typeproduct = { typeId: this.idlast, nametype: this.data.typeProduct }
     console.log(this.typeproduct);
@@ -100,7 +98,7 @@ export class ProductWarehouseComponent implements OnInit {
     this.route.params.subscribe(prams => {
       //this.user = prams
       this.user = prams;
-      // console.log(this.user)
+       console.log(this.user)
     })
 
     this.app.getdata(this.bill_of_lading, () => {
@@ -109,11 +107,18 @@ export class ProductWarehouseComponent implements OnInit {
       this.idlast = this.bill_of_lading.length + 1;
     })
 
+    this.app.getuser(this.staff, () => {
+      this.staff = this.app.userID;
+     
+      this.staffId = this.app.userID.length;
+      console.log( this.staffId)
+    })
+
 
 
 
 
   }
-
+  
 
 }

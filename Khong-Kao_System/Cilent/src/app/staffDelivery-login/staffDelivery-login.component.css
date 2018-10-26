@@ -1,4 +1,16 @@
 p {
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+mat-card {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+
+p {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
@@ -42,14 +54,20 @@ h2 {
   color: black;
 }
 
-.delivery-card {
+.staffloginDelivery-card {
   right: 0px;
   width: 300px;
   margin: auto;
   background:white;
- 
- 
 }
+
+.example-form {
+  right: 0px;
+  width: 300px;
+  margin: auto;
+  background:white;
+}
+
 
 .head-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
@@ -73,16 +91,5 @@ h2 {
   width: 100%;
 }
 
-.example-card {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Varela Round', sans-serif;
-}
-.example-spacer {
-  flex: 1 1 auto;
-}
-a {
-  margin: 2px;
-}
+
 

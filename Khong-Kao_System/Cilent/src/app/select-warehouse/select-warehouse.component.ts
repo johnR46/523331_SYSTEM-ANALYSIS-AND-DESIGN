@@ -31,7 +31,7 @@ export class SelectWarehouseComponent implements OnInit {
   }
   logout(){
    // console.log(this.data)
-    this.router.navigate([''])
+    this.router.navigate(['home'])
   }
   
 

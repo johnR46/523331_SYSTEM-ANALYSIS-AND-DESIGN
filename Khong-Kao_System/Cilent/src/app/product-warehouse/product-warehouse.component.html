@@ -18,12 +18,14 @@
       <a mat-stroked-button routerLink="/">ขายของเก่า</a>
 
       <a mat-stroked-button routerLink="/">เสนอขายของเก่า</a>
+      
+      <a mat-stroked-button routerLink="/delivery-list">ดูรายการจัดส่งสินค้า</a>
 
-      <a mat-stroked-button routerLink="/delivery">รายการจัดส่ง</a>
+      <a mat-stroked-button routerLink="/staffDeliveryLogin">รายการจัดส่ง</a>
 
       <a mat-stroked-button routerLink="/home">ติดต่อร้าน</a>
       
-      <a mat-stroked-button routerLink="/bill">จัดการคลังสินค้า</a>
+      <a mat-stroked-button routerLink="/stafflogin">จัดการคลังสินค้า</a>
 
       <a mat-stroked-button routerLink="">ออกจากระบบ</a>
 
@@ -97,19 +99,19 @@
 
             
             <mat-panel-title>
-              Day of the bill
+             itemdescripton
             </mat-panel-title>
             <mat-panel-description>
-              Inform the date you wish to Bill
+             item descripton
               <mat-icon>date_range</mat-icon>
             </mat-panel-description>
           </mat-expansion-panel-header>
       
           <mat-form-field>
-              <input matInput  placeholder="Date" [matDatepicker]="picker" (focus)="picker.open()"  [(ngModel)]="data.date"
-              required name="date" #date>
+                <input matInput placeholder="itemdescripton"  [(ngModel)]="data.itemdescripton"
+              required name="itemdescripton" #itemdescripton>
             </mat-form-field>
-            <mat-datepicker #picker></mat-datepicker>
+           
          
          
       
@@ -125,6 +127,12 @@
       <mat-card>
         <button mat-button color="primary" id = "center" (click)="SubmitDB()">save to DB</button>
       </mat-card>
+      <p>
+      
+      <mat-card>
+        <button mat-button color="primary" id = "left" (click)="gotobill()">Show Bill of lading</button>
+      </mat-card>
+      </p>
       
 </mat-card>
 
