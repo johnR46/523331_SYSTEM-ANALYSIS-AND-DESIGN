@@ -1,42 +1,40 @@
 package comeng.sa.no12.demo.entity;
-
-import lombok.*;
-import java.io.Serializable;
-import javax.persistence.Id;
-import javax.persistence.*;
 import javax.persistence.Entity;
+import javax.persistence.*;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import lombok.*;
 import java.util.*;
-
 
 @Entity
 @Data
-@Getter
-@Setter
-@NoArgsConstructor
-@ToString
-@EqualsAndHashCode
-@Table(name = "ListItem")
-public class ListItem  {
+@Table(name = "listItem")
+public class ListItem {
     @Id
     @SequenceGenerator(name = "listItem_seq", sequenceName = "listItem_seq")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "listItem_seq")
-    @Column(name = "ListItem_ID", unique = true, nullable = true)
+    private Long listItemId;
 
-    private @NonNull Long listItemId;
- 
-    // @OneToMany(mappedBy = "ListItem")
-    // private List<Item> item = new ArrayList<Item>();
+   @OneToMany(mappedBy = "listItem")
+    private List<Item> item = new ArrayList<Item>();
 
-   // @OneToMany(mappedBy = "itemId")
-   // private List<Item> item = new ArrayList<Item>();
-
-   // @OneToMany(mappedBy = "listItem")
-   // private List<Item> item = new ArrayList<Item>();
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "orderId")
+    private Orders orders;
 
     
-      
-    // @ManyToOne(fetch = FetchType.LAZY)
-    // @JoinColumn(name = "Orders")
-    // private Orders orders;
+   /* @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "itemId")
+    private Item item;
+*/
+ /*   private ListItem() {
 
+    }
+
+    public ListItem( List<Item> item ) {
+        this.item = item;
+    }
+*/
 }

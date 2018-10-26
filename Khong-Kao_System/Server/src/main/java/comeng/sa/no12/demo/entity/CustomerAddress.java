@@ -1,42 +1,52 @@
 package comeng.sa.no12.demo.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.*;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 import lombok.*;
 import java.util.*;
-import javax.persistence.*;
 
 @Entity
-@Getter @Setter
-@NoArgsConstructor
-@ToString @EqualsAndHashCode
-@Table(name= "CustomerAddress")
-
+@Data
+@Table(name = "customerAddress")
 public class CustomerAddress {
-    @Id 
-    @SequenceGenerator(name="customerAddress_seq",sequenceName="customerAddress_seq")       
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="customerAddress_seq")      
-	@Column(name="Address_ID",unique = true, nullable = true) 
+    @Id
+    @SequenceGenerator(name = "customerAddress_seq", sequenceName = "customerAddress_seq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "customerAddress_seq")
+
     private Long addressId;
     private String customerAddress;
-	private String customerAddress2;
-	private String district;
+    private String customerAddress2;
+    private String district;
     private String city;
     private String country;
     private Integer zipCode;
-    
-	//@OneToMany(mappedBy = "customerAddress")
-   // private List<Orders> orders = new ArrayList<Orders>();
 
-	 @ManyToOne(fetch = FetchType.LAZY)
-     @JoinColumn(name = "customerId")
-     private Customer customer;
+    @OneToMany(mappedBy = "customerAddress")
+    private List<Delivery> delivery = new ArrayList<Delivery>();
 
-	 @ManyToOne(fetch = FetchType.LAZY)
-     @JoinColumn(name = "deliveryId")
-     private Delivery delivery;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "customerId")
+    private Customer customer;
 
-     
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "provinceId", insertable = true)
     private Province province;
+
+    private CustomerAddress() {
+    }
+
+    public CustomerAddress(String customerAddress, String customerAddress2, String district, String city,
+            Integer zipCode) {
+                this.customerAddress = customerAddress;
+                this.customerAddress2 = customerAddress2;
+                this.district = district;
+                this.city = city;
+                this.zipCode = zipCode;
+
+    }
 
 }

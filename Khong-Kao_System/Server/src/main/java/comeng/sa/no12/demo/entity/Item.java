@@ -1,43 +1,43 @@
 package comeng.sa.no12.demo.entity;
-import lombok.*;
-import javax.persistence.*;
 import javax.persistence.Entity;
+import javax.persistence.*;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
-
-
+import lombok.*;
+import java.util.*;
 
 @Entity
-@Getter
-@Setter
-@ToString
-@EqualsAndHashCode
-@NoArgsConstructor
-@Data // lombox จะสร้าง method getter setter ให้เอง
-@Table(name = "Item") // ชื่อตาราง
+@Data
+@Table(name = "item")
 
 public class Item {
         @Id
-        @NotNull
-        @SequenceGenerator(name = "ItemId_seq", sequenceName = "ItemId_seq")
-        @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ItemId_seq")
+        @SequenceGenerator(name = "item_seq", sequenceName = "item_seq")
+        @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "item_seq")
+        private  Long itemId;
 
-        private @NonNull Long itemId;
+        private  String Itemname;
+        private  String Itemdescripton;
+        private  Double price;
+        private  Integer Qty;
 
-        private @NonNull String Itemname;
-        private @NonNull String Itemdescripton;
+        @ManyToOne(fetch = FetchType.LAZY)
+        @JoinColumn(name = "listItemId")
+        private ListItem listItem;
 
-        private @NonNull Double price;
-        private @NonNull Integer Qty;
+        @OneToMany(mappedBy = "item")
+        private List<Bill_of_lading> bill = new ArrayList<Bill_of_lading>();
 
-      
-        public Item(String Itemdescripton,String Itemname, Integer Qty,  Double price,Long itemId) {
-                this.itemId = itemId;
-                this.Itemname = Itemname;
-                this.Itemdescripton = Itemdescripton;
-                this.price = price;
-                this.Qty = Qty;
-        }
+		
+private Item(){}
+public Item(String Itemname,String Itemdescripton, Double price,Integer Qty){
+        this.Itemname = Itemname;
+        this.Itemdescripton = Itemdescripton;
+        this.price = price;
+        this.Qty = Qty;
+        
 
+}
 }
