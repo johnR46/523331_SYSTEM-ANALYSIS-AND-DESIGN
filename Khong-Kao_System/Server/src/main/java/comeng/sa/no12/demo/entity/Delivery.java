@@ -26,9 +26,9 @@ public class Delivery {
     @JoinColumn(name = "staffId")
     private Staff staff;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "addressId")
-    private CustomerAddress customerAddress;
+    // @ManyToOne(fetch = FetchType.LAZY)
+    // @JoinColumn(name = "addressId")
+    // private CustomerAddress customerAddress;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ordersId")
@@ -37,10 +37,10 @@ public class Delivery {
     private Delivery() {
     }
 
-    public Delivery(Staff staff, CustomerAddress customerAddress, Orders orders, Date deliveryDate, String trackId) {
+    public Delivery(Staff staff, /*CustomerAddress customerAddress, */Orders orders, Date deliveryDate, String trackId) {
 
         this.staff = staff;
-        this.customerAddress = customerAddress;
+        // this.customerAddress = customerAddress;
         this.orders = orders;
         this.deliveryDate = deliveryDate;
         this.trackId = trackId;

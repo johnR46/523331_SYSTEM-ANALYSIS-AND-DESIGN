@@ -47,49 +47,53 @@ class Bill_of_ladingController { // pornhub ช่วยได้
     }
 
     @GetMapping("/Bill_of_lading/{id}")
-
     @CrossOrigin(origins = "http://localhost:4200")
     public Bill_of_lading billList(@PathVariable("id") Long id) {
         return bill_of_ladingRepository.findByBillId(id);
     }
 
     @GetMapping("/Bill_of_lading-list")
-
     @CrossOrigin(origins = "http://localhost:4200")
     public Collection<Bill_of_lading> bill_of_lading() {
         return bill_of_ladingRepository.findAll().stream().collect(Collectors.toList());
     }
 
-    /*
-     * @PostMapping("/Bill_of_lading-insert/{id}")
-     * 
-     * @CrossOrigin(origins = "http://localhost:4200") public
-     * ResponseEntity<Map<String, Object>> BillLadingSubmit(@PathVariable("id") Long
-     * id) { try { Product p = this.productRepository.findByProductId(id);
-     * TypeProduct t = this.typeProductRepository.findByTypeId(id); User u =
-     * this.userRepository.findByUserId(id); this.bill_of_ladingRepository.save(new
-     * Bill_of_lading(p, t, u));
-     * 
-     * Map<String, Object> json = new HashMap<String, Object>(); json.put("success",
-     * true); json.put("status", "save");
-     * 
-     * HttpHeaders headers = new HttpHeaders(); headers.add("Content-Type",
-     * "application/json; charset=UTF-8"); headers.add("X-Fsl-Location", "/");
-     * headers.add("X-Fsl-Response-Code", "302"); return (new
-     * ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.OK));
-     * 
-     * } catch (NullPointerException e) { Map<String, Object> json = new
-     * HashMap<String, Object>();
-     * System.out.println("Error Save CancelReservation"); json.put("success",
-     * false); json.put("status", "save-false");
-     * 
-     * HttpHeaders headers = new HttpHeaders(); headers.add("Content-Type",
-     * "application/json; charset=UTF-8"); headers.add("X-Fsl-Location", "/");
-     * headers.add("X-Fsl-Response-Code", "500"); return (new
-     * ResponseEntity<Map<String, Object>>(json, headers,
-     * HttpStatus.INTERNAL_SERVER_ERROR));
-     * 
-     * } }
-     */
+
+    
+    @PostMapping("/Bill_of_lading-insert/{id}/staffId/{staffId}")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public ResponseEntity<Map<String, Object>> BillLadingSubmit(@PathVariable("id") Long id,@PathVariable("staffId") Long staffId) {
+        try {
+            Item p = this.itemRepository.findByItemId(id);
+            TypeItem t = this.typeItemRepository.findByTypeId(id);
+            Staff u = this.staffRepository.findByStaffId(staffId);
+            this.bill_of_ladingRepository.save(new Bill_of_lading(u, p, t));
+            Map<String, Object> json = new HashMap<String, Object>();
+            json.put("success", true);
+            json.put("status", "save");
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json; charset=UTF-8");
+            headers.add("X-Fsl-Location", "/");
+            headers.add("X-Fsl-Response-Code", "302");
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.OK));
+
+        } catch (NullPointerException e) {
+            Map<String, Object> json = new HashMap<String, Object>();
+            System.out.println("Error Save CancelReservation");
+            json.put("success", false);
+            json.put("status", "save-false");
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json; charset=UTF-8");
+            headers.add("X-Fsl-Location", "/");
+            headers.add("X-Fsl-Response-Code", "500");
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.INTERNAL_SERVER_ERROR));
+
+        }
+    }
+
+
+
 
 }

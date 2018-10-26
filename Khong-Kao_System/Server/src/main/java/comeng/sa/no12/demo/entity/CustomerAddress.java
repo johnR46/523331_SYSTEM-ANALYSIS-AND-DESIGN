@@ -33,12 +33,13 @@ public class CustomerAddress {
     }
 
     public CustomerAddress(Province province, String customerAddress, String customerAddress2, String district,
-            String city, Integer zipCode) {
+            String city,  String country,Integer zipCode) {
         this.province = province;
         this.customerAddress = customerAddress;
         this.customerAddress2 = customerAddress2;
         this.district = district;
         this.city = city;
+        this.country = country;
         this.zipCode = zipCode;
 
     }

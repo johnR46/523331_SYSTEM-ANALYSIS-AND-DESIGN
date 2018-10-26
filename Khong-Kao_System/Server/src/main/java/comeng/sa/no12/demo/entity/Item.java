@@ -25,11 +25,11 @@ public class Item {
 
 		
 private Item(){}
-public Item(String Itemname,String Itemdescripton, Double price,Integer Qty){
+public Item(String Itemname, Double price,Integer Qty,String Itemdescripton){
         this.Itemname = Itemname;
-        this.Itemdescripton = Itemdescripton;
         this.price = price;
         this.Qty = Qty;
+        this.Itemdescripton = Itemdescripton;
         
 
 }

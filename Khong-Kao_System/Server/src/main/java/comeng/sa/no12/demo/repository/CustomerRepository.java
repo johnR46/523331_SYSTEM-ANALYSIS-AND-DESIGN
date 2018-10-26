@@ -9,6 +9,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 public
 interface CustomerRepository extends JpaRepository<Customer, Long> {
 	Customer findByCustomerId(Long customerId);
-//	Customer findByCustomer_name(String customer_name);
-
+	Customer findBycustomeruserID(String  customeruserID);
+	Customer findBycustomerPassword(String  customerPassword);
+	
 } 

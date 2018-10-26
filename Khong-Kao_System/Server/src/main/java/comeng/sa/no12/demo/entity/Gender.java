@@ -19,9 +19,6 @@ public class Gender {
     private  Long genderId;
     private  String sex;
 
-    
-    @OneToMany(mappedBy = "gender")
-    private List<Customer> customer = new ArrayList<Customer>();
 
     private Gender() {
     }

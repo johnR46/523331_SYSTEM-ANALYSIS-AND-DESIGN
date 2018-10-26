@@ -38,40 +38,44 @@ class ItemController {
         return itemRepository.findByItemId(id);
     }
 
-    /*
-     * @PostMapping("/Product-insert/{id}/name/{name}/price/{price}/qty/{qty}")
-     * 
-     * @CrossOrigin(origins = "http://localhost:4200") public
-     * ResponseEntity<Map<String, Object>> productSumbit(@PathVariable("id") Long
-     * id,@PathVariable("name")String name,@PathVariable("price")Double
-     * price,@PathVariable("qty")Integer qty) { try { // ต้องแก้ตรงไหนวะ // เหลือไร
-     * // ยัดใส้่ typeproduct ทำแปป
-     * 
-     * 
-     * Product p = new Product(name,price,qty);
-     * 
-     * this.productRepository.save(p);
-     * 
-     * Map<String, Object> json = new HashMap<String, Object>(); json.put("success",
-     * true); json.put("status", "save");
-     * 
-     * HttpHeaders headers = new HttpHeaders(); headers.add("Content-Type",
-     * "application/json; charset=UTF-8"); headers.add("X-Fsl-Location", "/");
-     * headers.add("X-Fsl-Response-Code", "302"); return (new
-     * ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.OK));
-     * 
-     * } catch (NullPointerException e) { Map<String, Object> json = new
-     * HashMap<String, Object>();
-     * System.out.println("Error Save CancelReservation"); json.put("success",
-     * false); json.put("status", "save-false");
-     * 
-     * HttpHeaders headers = new HttpHeaders(); headers.add("Content-Type",
-     * "application/json; charset=UTF-8"); headers.add("X-Fsl-Location", "/");
-     * headers.add("X-Fsl-Response-Code", "500"); return (new
-     * ResponseEntity<Map<String, Object>>(json, headers,
-     * HttpStatus.INTERNAL_SERVER_ERROR));
-     * 
-     * } }
-     */
+    @PostMapping("/Item-insert/{id}/name/{name}/price/{price}/qty/{qty}/itemdescripton/{itemdescripton}")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public ResponseEntity<Map<String, Object>> ItemSumbit(@PathVariable("id") Long id,@PathVariable("name")String name,@PathVariable("price")Double price,@PathVariable("qty")Integer qty,@PathVariable("itemdescripton")String itemdescripton) {
+        try {
+            // ต้องแก้ตรงไหนวะ 
+            // เหลือไร 
+            // ยัดใส้่ typeproduct ทำแปป
+            
+
+            Item  i = new Item(name,price,qty,itemdescripton);
+
+           this.itemRepository.save(i);
+           
+            Map<String, Object> json = new HashMap<String, Object>();
+            json.put("success", true);
+            json.put("status", "save");
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json; charset=UTF-8");
+            headers.add("X-Fsl-Location", "/");
+            headers.add("X-Fsl-Response-Code", "302");
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.OK));
+
+        } catch (NullPointerException e) {
+            Map<String, Object> json = new HashMap<String, Object>();
+            System.out.println("Error Save CancelReservation");
+            json.put("success", false);
+            json.put("status", "save-false");
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json; charset=UTF-8");
+            headers.add("X-Fsl-Location", "/");
+            headers.add("X-Fsl-Response-Code", "500");
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.INTERNAL_SERVER_ERROR));
+
+        }
+    }
+
+    
 
 }

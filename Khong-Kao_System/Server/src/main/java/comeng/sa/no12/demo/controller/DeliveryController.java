@@ -13,9 +13,17 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.stream.Collectors;
 import lombok.*;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
+
+
+import org.springframework.web.bind.annotation.PostMapping;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
@@ -26,24 +34,31 @@ class DeliveryController {
     private OrdersRepository ordersRespository;
     @Autowired
     private StaffRepository staffRepository;
-    @Autowired
-    private CustomerAddressRepository customerAddressRepository;
+   
 
     private DeliveryRepository deliveryRepository;
 
-    public DeliveryController(DeliveryRepository deliveryRepository) {
+    public DeliveryController(DeliveryRepository deliveryRepository,
+     CustomerRepository customerRepository,
+     OrdersRepository ordersRespository,
+     StaffRepository staffRepository) {
         this.deliveryRepository = deliveryRepository;
+        this.customerRepository = customerRepository;
+        this.ordersRespository = ordersRespository;
+        this.staffRepository = staffRepository;
+
     }
 
-    @GetMapping(path = "/Delivery-list", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Collection<Delivery> Delivery() {
-        return deliveryRepository.findAll().stream().collect(Collectors.toList());
-    }
+    // @GetMapping("/Delivery/{id}")
+    // public Delivery delivery(@PathVariable("id") Long id) {
+    //     return deliveryRepository.findByDeliveryId(id);
+    // }
 
-    @GetMapping("/Delivery/{id}")
-    @CrossOrigin(origins = "http://localhost:4200")
-    public Delivery deliveryfind(@PathVariable("id") Long id) {
-        return deliveryRepository.findByDeliveryId(id);
-    }
+    
+    // @GetMapping("/Delivery")
+    // public Collection<Delivery> delivery() {
+    //     return deliveryRepository.findAll().stream().collect(Collectors.toList());
+    // }
+   
 
 }

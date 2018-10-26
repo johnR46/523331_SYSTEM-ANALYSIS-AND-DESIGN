@@ -96,9 +96,9 @@ public class DatabaseLoader implements ApplicationRunner {
         Details d2 = this.detailsRepository.findByDetailsId(2L);
         Details d3 = this.detailsRepository.findByDetailsId(3L);
 
-        this.itemRepository.save(new Item("Coke", "CaPeEnd", 15.0, 1));
-        this.itemRepository.save(new Item("joke", "CaPeEnd", 15.0, 3));
-        this.itemRepository.save(new Item("Water", "CaPeEnd", 15.0, 1));
+        this.itemRepository.save(new Item("Coke", 15.0, 1,"CaPeEnd"));
+        this.itemRepository.save(new Item("joke", 15.0, 3, "CaPeEnd"));
+        this.itemRepository.save(new Item("Water", 15.0, 1, "CaPeEnd"));
         Item i1 = this.itemRepository.findByItemId(1L);
         Item i2 = this.itemRepository.findByItemId(2L);
         Item i3 = this.itemRepository.findByItemId(3L);
@@ -123,17 +123,17 @@ public class DatabaseLoader implements ApplicationRunner {
         this.bill_of_ladingRepository.save(new Bill_of_lading(s3, i3, t3));
 
         this.customerAddressRepository
-                .save(new CustomerAddress(p1, "Surnaree", "suraswad", "suraswd3", "Korath", 30000));
+                .save(new CustomerAddress(p1, "Surnaree", "suraswad", "suraswd3", "Korath","THAILAND", 30000));
         this.customerAddressRepository
-                .save(new CustomerAddress(p1, "suraswad", "suraswad", "suraswd3", "suraswd4", 30000));
-        this.customerAddressRepository.save(new CustomerAddress(p1, "korth3", "suraswad", "suraswd4", "korth3", 30000));
+                .save(new CustomerAddress(p1, "suraswad", "suraswad", "suraswd3", "suraswd4","ENGLAND", 30000));
+        this.customerAddressRepository.save(new CustomerAddress(p1, "korth3", "suraswad", "suraswd4","Japan", "korth3", 30000));
         CustomerAddress ca1 = this.customerAddressRepository.findByAddressId(1L);
         CustomerAddress ca2 = this.customerAddressRepository.findByAddressId(2L);
         CustomerAddress ca3 = this.customerAddressRepository.findByAddressId(3L);
 
-        this.customerRepository.save(new Customer(ca1, g1, "john", "0935479424", "hotmail", "JAX", "1234"));
-        this.customerRepository.save(new Customer(ca2, g2, "john", "0935479424", "hotmail", "KKK", "4321"));
-        this.customerRepository.save(new Customer(ca3, g3, "john", "0935479424", "hotmail", "XXX", "4444"));
+        this.customerRepository.save(new Customer(ca1, g1, "john", "0935479424", "hotmail", "JAX", "eee"));
+        this.customerRepository.save(new Customer(ca2, g2, "john", "0935479424", "hotmail", "KKK", "ffa"));
+        this.customerRepository.save(new Customer(ca3, g3, "john", "0935479424", "hotmail", "XXX", "xxbn"));
 
         Customer c1 = this.customerRepository.findByCustomerId(1L);
         Customer c2 = this.customerRepository.findByCustomerId(2L);
@@ -157,9 +157,9 @@ public class DatabaseLoader implements ApplicationRunner {
         Posted po3 =    this.postedRepository.findByPostedId(3L);
         
 
-        this.deliveryRepository.save(new Delivery(s1,ca1,o1,new Date(),"AAA"));
-        this.deliveryRepository.save(new Delivery(s2,ca2,o2,new Date(),"CCC"));
-        this.deliveryRepository.save(new Delivery(s3,ca3,o3,new Date(),"BBB"));
+        this.deliveryRepository.save(new Delivery(s1,o1,new Date(),"AAA"));
+        this.deliveryRepository.save(new Delivery(s2,o2,new Date(),"CCC"));
+        this.deliveryRepository.save(new Delivery(s3,o3,new Date(),"BBB"));
 
         /*
          * this.customerAddressRepository.save(new CustomerAddress("Surnaree",

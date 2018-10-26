@@ -22,7 +22,7 @@ public class Customer {
     private String customerName;
     private String customerphone;
     private String customeremail;
-    private String customerLogin;
+    private String customeruserID;
     private String customerPassword;
     
     
@@ -44,13 +44,14 @@ public class Customer {
     private Customer() {
     }
 
-    public Customer(CustomerAddress customerAddress,Gender gender ,String customerName, String customerphone, String customeremail,String customerLogin ,String customerPassword) {
+    public Customer(CustomerAddress customerAddress,Gender gender ,String customerName, String customerphone, String customeremail
+    ,String customeruserID ,String customerPassword) {
        this.customerAddress =customerAddress;
        this.gender = gender;
         this.customerName = customerName;
         this.customerphone = customerphone;
         this.customeremail = customeremail;
-        this.customerLogin = customerLogin;
+        this.customeruserID = customeruserID;
         this.customerPassword = customerPassword;
        
 
